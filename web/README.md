@@ -2,8 +2,8 @@
 
 > Interactive web version of my CV built with SvelteKit. Shows experience, skills, projects, and achievements in a nice format with navigation between sections.
 
-This app is deployed to [cv.aliciasykes.com](https://cv.aliciasykes.com/).
-And the code is in the [`web/`](https://github.com/Lissy93/cv/tree/main/web) folder of my [cv repo](https://github.com/Lissy93/cv).
+This app is deployed to [cv.robertovallado.dev](https://cv.robertovallado.dev/).
+And the code is in the [`web/`](https://github.com/RobertoVallado/cv/tree/main/web) folder of my [cv repo](https://github.com/RobertoVallado/cv).
 
 ## Quick Start
 
