@@ -33,7 +33,7 @@
 %-------------------------------------------------------------------------------
 %                Identification
 %-------------------------------------------------------------------------------
-\ProvidesClass{resume-format}[2015/12/14 v1.3 Alicia Sykes Curriculum Vitae Class]
+\ProvidesClass{resume-format}[2015/12/14 v1.3 Roberto Vallado Curriculum Vitae Class]
 \NeedsTeXFormat{LaTeX2e}
 
 

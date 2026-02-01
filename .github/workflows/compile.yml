@@ -16,7 +16,7 @@ on:
       - completed
 
 env:
-  PDF_NAME: Alicia-Sykes-CV.pdf
+  PDF_NAME: Roberto-Vallado-CV.pdf
 
 jobs:
   build:
@@ -111,9 +111,9 @@ jobs:
         name: resume-pdf
         path: out/
 
-    - name: 🔑 Set up GitHub CLI
-      run: |
-        echo "${{ secrets.BOT_TOKEN }}" | gh auth login --with-token
+    # - name: 🔑 Set up GitHub CLI
+    #   run: |
+    #     echo "${{ secrets.BOT_TOKEN }}" | gh auth login --with-token
 
     - name: 📄 Create GitHub Release
       run: |
