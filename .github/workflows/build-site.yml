@@ -79,15 +79,15 @@ jobs:
           echo "✅ LaTeX template generated successfully"
           
           # Compile LaTeX to PDF  
-          python lib/compile.py --input tex/resume.tex --output out/Alicia-Sykes-CV.pdf
+          python lib/compile.py --input tex/resume.tex --output out/Roberto-Vallado-CV.pdf
           echo "✅ PDF generated successfully"
-          ls -la out/Alicia-Sykes-CV.pdf
+          ls -la out/Roberto-Vallado-CV.pdf
       
       - name: Upload CV PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: cv-pdf
-          path: out/Alicia-Sykes-CV.pdf
+          path: out/Roberto-Vallado-CV.pdf
           retention-days: 90
 
   build-website:
@@ -164,10 +164,10 @@ jobs:
       - name: Copy PDF to website build
         run: |
           # Copy PDF with web-friendly filename if CV build succeeded
-          if [ "${{ needs.build-cv.result }}" = "success" ] && [ -f "pdf/Alicia-Sykes-CV.pdf" ]; then
-            cp "pdf/Alicia-Sykes-CV.pdf" "website/alicia-sykes-cv.pdf"
-            echo "✅ PDF copied to website build as alicia-sykes-cv.pdf"
-            ls -lh website/alicia-sykes-cv.pdf
+          if [ "${{ needs.build-cv.result }}" = "success" ] && [ -f "pdf/Roberto-Vallado-CV.pdf" ]; then
+            cp "pdf/Roberto-Vallado-CV.pdf" "website/roberto-vallado-cv.pdf"
+            echo "✅ PDF copied to website build as roberto-vallado-cv.pdf"
+            ls -lh website/roberto-vallado-cv.pdf
           else
             echo "⚠️  CV build failed or PDF not found, deploying website without PDF"
           fi

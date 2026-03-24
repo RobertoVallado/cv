@@ -9,7 +9,7 @@
     if (browser) {
       try {
         // Try to download the PDF directly from the website
-        const pdfUrl = '/alicia-sykes-cv.pdf';
+        const pdfUrl = '/roberto-vallado-cv.pdf';
         
         // Check if the PDF exists
         const response = await fetch(pdfUrl, { method: 'HEAD' });
@@ -18,9 +18,9 @@
           window.location.href = pdfUrl;
         } else {
           // Fallback to GitHub releases
-          const repoOwner = 'Lissy93';
-          const repoName = 'cv'; 
-          const assetName = 'Alicia-Sykes-CV.pdf';
+          const repoOwner = 'RobertoVallado';
+          const repoName = 'cv';
+          const assetName = 'Roberto-Vallado-CV.pdf';
 
           const releaseResponse = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/releases/latest`);
           if (!releaseResponse.ok) {
@@ -57,7 +57,7 @@
     <h1>Download Error</h1>
     <p>Sorry, there was an issue downloading the CV. You can try:</p>
     <ul>
-      <li><a href="https://github.com/Lissy93/cv/releases/latest" target="_blank" rel="noopener">Visit the releases page directly</a></li>
+      <li><a href="https://github.com/RobertoVallado/cv/releases/latest" target="_blank" rel="noopener">Visit the releases page directly</a></li>
       <li><a href="/">Return to the CV website</a></li>
     </ul>
   </div>

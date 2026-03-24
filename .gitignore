@@ -32,12 +32,16 @@ node_modules/
 out/*
 
 # Do not ignore specific files in out directory
-!out/Alicia-Sykes-CV.pdf
+!out/Roberto-Vallado-CV.pdf
 
 # Other ignored files and directories
 resume.aux
 resume.log
 resume.out
+
+# Ignore Claude Code files
+CLAUDE.md
+.claude/
 
 # Ignore all hidden system files
 .DS_Store
