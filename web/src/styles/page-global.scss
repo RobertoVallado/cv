@@ -166,8 +166,8 @@ aside {
     border-radius: 0.625rem 0 0 0;
     margin: -2px 0 0 -2px;
     z-index: 12;
-    background: #e0e0e0;
-    box-shadow: rgb(202, 202, 202) 3.2px 3.2px 8px 0px inset, rgb(255, 255, 255) -3.2px -3.2px 8px 0px inset;
+    background: #0d0f18;
+    box-shadow: rgb(5, 7, 15) 3.2px 3.2px 8px 0px inset, rgb(30, 33, 48) -3.2px -3.2px 8px 0px inset;
     position: relative;
   }
 }
@@ -204,7 +204,7 @@ header {
 }
 
 main {
-  background: #e9e5ef;
+  background: #0d0f18;
   padding: 1.25rem;
   flex-grow: 1;
   overflow-y: auto;

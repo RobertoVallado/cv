@@ -64,12 +64,8 @@
 	$: path = $page.url.pathname;
 
 	const socials = [
-		{ name: 'GitHub', url: 'https://github.com/lissy93', icon: 'fa-github', color: '#333' },
-		{ name: 'Twitter', url: 'https://twitter.com/lissy_sykes', icon: 'fa-twitter', color: '#1DA1F2' },
-		{ name: 'LinkedIn', url: 'https://www.linkedin.com/in/aliciasykes/', icon: 'fa-linkedin', color: '#0A66C2' },
-		{ name: 'Mastodon', url: 'https://mastodon.social/@lissy93', icon: 'fa-mastodon', color: '#6364FF' },
-		{ name: 'DEV.to', url: 'https://dev.to/lissy93', icon: 'fa-dev', color: '#f04c8a' },
-		{ name: 'StackOverflow', url: 'https://stackoverflow.com/users/979052/alicia-sykes', icon: 'fa-stack-overflow', color: '#F58025' },
+		{ name: 'GitHub', url: 'https://github.com/RobertoVallado', icon: 'fa-github', color: '#e2e8f0' },
+		{ name: 'LinkedIn', url: 'https://www.linkedin.com/in/robertovallado/', icon: 'fa-linkedin', color: '#0A66C2' },
 	];
 
 	const navLinks = [
@@ -80,18 +76,16 @@
 	];
 
 	const headerLinks = [
-		{ name: 'About', url: 'https://aliciasykes.com/about' },
-		{ name: 'Projects', url: 'https://aliciasykes.com/projects' },
-		{ name: 'Contact', url: 'https://aliciasykes.com/contact' },
+		{ name: 'Contact', url: '/contact' },
 	];
 </script>
 
 <div class="app">
 	<aside>
 		<div class="aside-inner">
-			<a href="/" class="no-underline"><h1>CV: Alicia Sykes</h1></a>
+			<a href="/" class="no-underline"><h1>CV: Roberto Vallado</h1></a>
 			<h2 class="job-title">Principal Engineer</h2>
-			<img class="profile-picture" width="300" src="/profile-picture.jpg" alt="Alicia Sykes" />
+			<img class="profile-picture" width="300" src="/profile-picture.jpg" alt="Roberto Vallado" />
 			<ul class="socials">
 				{#each socials as { url, icon, color }}
 					<li style="--hover-color: {color}">
@@ -116,7 +110,7 @@
 			<a href="/download" class="no-underline">
 				<button class="download-btn"><i class="fa-solid fa-file-arrow-down"></i>Download CV</button>
 			</a>
-			<a class="view-code-link" href="https://github.com/lissy93/cv" target="_blank" rel="nofollow">Or View CV Source Code on GitHub</a>
+			<a class="view-code-link" href="https://github.com/RobertoVallado/cv" target="_blank" rel="nofollow">Or View CV Source Code on GitHub</a>
 		</div>
 		<div class="aside-bottom">
 			<a class="get-in-touch" href="/contact">
@@ -125,8 +119,8 @@
 			</a>
 			<br>
 			<small class="license">
-				<a href="https://github.com/lissy93/cv">lissy93/cv</a>
-				is licensed under <a href="https://github.com/Lissy93/cv/blob/main/LICENSE">MIT</a>, &copy; <a href="https://aliciasykes.com">Alicia Sykes</a> 2024
+				<a href="https://github.com/RobertoVallado/cv">RobertoVallado/cv</a>
+				— based on <a href="https://github.com/Lissy93/cv">Lissy93/cv</a>, licensed under <a href="https://github.com/Lissy93/cv/blob/main/LICENSE">MIT</a> &copy; <a href="https://aliciasykes.com">Alicia Sykes</a> 2024
 			</small>
 		</div>
 	</aside>

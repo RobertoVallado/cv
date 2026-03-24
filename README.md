@@ -21,7 +21,7 @@ See [`.github/README.md`](.github/README.md) for full documentation.
 make install    # Install Python deps
 # Edit resume.yml with your content
 make            # Validate → generate LaTeX → compile PDF → markdown
-# Output: out/Alicia-Sykes-CV.pdf
+# Output: out/Roberto-Vallado-CV.pdf
 ```
 
 ### Web app

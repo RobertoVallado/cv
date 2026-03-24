@@ -2,12 +2,12 @@
   let emailVisible = false;
   const revealEmail = () => {
     emailVisible = true;
-    navigator.clipboard.writeText('hello@aliciasykes.com');
+    navigator.clipboard.writeText('hello@robertovallado.com');
   }
 </script>
 
 <svelte:head>	
-	<title>Alicia Sykes | CV | Contact</title>
+	<title>Roberto Vallado | CV | Contact</title>
 </svelte:head>
 
 <h1>Contact</h1>
@@ -18,7 +18,7 @@
 <p>
   You can get in touch by dropping me an email 
   {#if emailVisible}
-    <a href="mailto:hello@aliciasykes.com">hello@aliciasykes.com</a>
+    <a href="mailto:hello@robertovallado.com">hello@robertovallado.com</a>
   {:else}
     <button on:click={revealEmail} class="small-btn no-float" title="Click to show email address, and copy to clipboard">
       Reveal email address
@@ -26,7 +26,7 @@
   {/if}
   <br>
   Or for other communication channels,
-  see <a target="_blank" href="https://aliciasykes.com/contact">aliciasykes.com/contact</a>
+  see <a target="_blank" href="https://github.com/RobertoVallado">github.com/RobertoVallado</a>
 </p>
 <p>
   Thank you for stopping by, and I really hope to hear from you!
@@ -40,9 +40,8 @@
     A shortened version of my CV in PDF format can be downloaded <a href="/download">here</a>.
   </p>
   <p>
-    Beyond that, I'm on LinkedIn, at <a href="https://www.linkedin.com/in/aliciasykes/">in/aliciasykes</a>
-    and GitHub at <a href="https://github.com/lissy93">@lissy93</a>.
-    A catalog of my recent open source apps can be found at <a href="https://apps.aliciasykes.com">apps.aliciasykes.com</a>
+    Beyond that, I'm on LinkedIn at <a href="https://www.linkedin.com/in/robertovallado/">in/robertovallado</a>
+    and GitHub at <a href="https://github.com/RobertoVallado">@RobertoVallado</a>.
   </p>
   <p>
     To see if I'd be a good fit for your team, you can view my <a href="/ideal-role">ideal role</a>

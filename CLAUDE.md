@@ -31,8 +31,8 @@ make              # Full pipeline: install → validate → generate → compile
 make install      # Install Python dependencies
 make validate     # Validate resume.yml against schema.json + check template syntax
 make generate     # Render template.jinja → tex/resume.tex
-make compile      # xelatex compile → out/Alicia-Sykes-CV.pdf
-make markdown     # Generate → out/Alicia-Sykes-CV.md
+make compile      # xelatex compile → out/Roberto-Vallado-CV.pdf
+make markdown     # Generate → out/Roberto-Vallado-CV.md
 make clean        # Remove all generated output files
 make watch        # Watch for changes and rebuild (requires `entr`)
 ```
@@ -68,7 +68,7 @@ make validate
 # 4. Generate LaTeX + compile PDF
 make generate
 make compile
-# Output: out/Alicia-Sykes-CV.pdf
+# Output: out/Roberto-Vallado-CV.pdf
 
 # 5. (Optional) Web app
 make web_dev
@@ -81,8 +81,8 @@ make web_dev
 **PDF pipeline:**
 1. `lib/validate.py` — validates `resume.yml` against `schema.json` and Jinja2 template syntax
 2. `lib/generate.py` — renders `template.jinja` with YAML data → writes `tex/resume.tex`
-3. `lib/compile.py` — runs `xelatex` on `tex/resume.tex` → `out/Alicia-Sykes-CV.pdf`
-4. `lib/markdown.py` — generates `out/Alicia-Sykes-CV.md` from YAML
+3. `lib/compile.py` — runs `xelatex` on `tex/resume.tex` → `out/Roberto-Vallado-CV.pdf`
+4. `lib/markdown.py` — generates `out/Roberto-Vallado-CV.md` from YAML
 
 **LaTeX layer:** `tex/resume-format.cls` is the custom document class. Fonts live in `tex/fonts/`. FontAwesome icons via `tex/fontawesome.sty`. The `tex/resume.tex` file is auto-generated — do not edit it directly.
 
