@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xelatex --version)",
+      "Bash(yarn --version)",
+      "Bash(npm --version)"
+    ]
+  }
+}

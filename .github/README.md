@@ -52,26 +52,63 @@ Why? ...Because why spend 30 minutes writing your CV, when you could spend 30 ho
 ---
 
 ### Option #2 - Local
-See the [`Makefile`](/Makefile) for all the available commands. Or, just run `make` from the root, to install deps, validate content, generate LaTex, and compile PDF
 
-1. Clone the repo
-2. Update resume.json with your own content
-1. Run `make` from the root, to install deps, validate content, generate LaTex, and compile PDF
+#### Prerequisites
 
-Or, to deploy the web version
-1. Follow steps above (clone, edit, validate)
-2. Run `make web` to generate `dist/`
-3. upload to any CDN, web server or static hosting provider (I use Vercel)
+Before running locally, you need:
 
-<details><summary>Commands</summary>
+| Dependency | Purpose | Install |
+|-----------|---------|---------|
+| **Python 3** | Running build scripts | [python.org](https://www.python.org/downloads/) |
+| **xelatex** | Compiling LaTeX → PDF | **Windows**: [MiKTeX](https://miktex.org/download) · **macOS**: `brew install --cask mactex` · **Linux**: `sudo apt install texlive-xetex texlive-fonts-recommended texlive-fonts-extra` |
+| **Node.js + npm** | Web app only | [nodejs.org](https://nodejs.org/) |
+| **make** | Running build commands | **Windows** (Git Bash): ships with Git for Windows, or install via `winget install GnuWin32.Make` |
 
-- `make install` - Download dependencies
-- `make validate` - Validate content
-- `make generate` - Generate LaTex
-- `make compile` - Compile PDF
+> **Windows users**: Run all `make` commands in **Git Bash**, not PowerShell or CMD.
+
+#### Setup
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/cv.git
+cd cv
+
+# Edit your CV data
+# Open resume.yml and replace with your own content
+
+# Install Python dependencies
+make install
+
+# Validate your data
+make validate
+
+# Generate LaTeX and compile to PDF
+make generate
+make compile
+# Output: out/Alicia-Sykes-CV.pdf
+
+# Or run the full pipeline in one command:
+make
+```
+
+#### Web app
+
+```bash
+make web_dev    # Dev server at http://localhost:5173
+make web        # Build static site
+```
+
+<details><summary>All commands</summary>
+
+- `make install` - Install Python dependencies
+- `make validate` - Validate `resume.yml` against schema
+- `make generate` - Generate LaTeX from template
+- `make compile` - Compile LaTeX to PDF
+- `make markdown` - Generate Markdown version
 - `make clean` - Remove generated files
-- `make watch` - Watch for changes, recompile and refresh
-- `make web` - Launches web version, installs NPM deps, builds and serves the site
+- `make watch` - Watch for changes and rebuild (requires `entr`)
+- `make web_dev` - Start web dev server at localhost:5173
+- `make web` - Build and preview web version
 </details>
 
 ```mermaid

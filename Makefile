@@ -59,10 +59,10 @@ watch:
 
 
 web_install:
-	cd web && yarn
+	cd web && npm install
 
 web: web_install
-	cd web && yarn build && yarn preview
+	cd web && npm run build && npm run preview
 
 web_dev: web_install
-	cd web && yarn dev
+	cd web && npm run dev
