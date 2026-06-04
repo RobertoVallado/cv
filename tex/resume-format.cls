@@ -236,7 +236,7 @@
 \definecolor{awesome-skyblue}{HTML}{0395DE}
 \definecolor{awesome-red}{HTML}{000000}
 \definecolor{awesome-pink}{HTML}{F04C8A}
-\definecolor{headerbg}{HTML}{F04C8A}
+\definecolor{headerbg}{HTML}{1d0480}
 \definecolor{awesome-orange}{HTML}{FF6138}
 \definecolor{awesome-nephritis}{HTML}{27AE60}
 \definecolor{awesome-concrete}{HTML}{95A5A6}
@@ -699,7 +699,7 @@
     {\entrytitlestyle{#2} \hfill \entrylocationstyle{#3} \\
      \entrypositionstyle{#1} \hfill \entrydatestyle{#4} \\
      \descriptionstyle{#5}}
-  \vspace{\@entryspacing}
+  \par\vspace{\@entryspacing}
 }
 
 % Define an environment for cvsubentry
@@ -795,7 +795,7 @@
   \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l L{20.2cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l L{\dimexpr\textwidth-3.5cm\relax}}
 }{
     \end{tabular*}
   \end{center}

@@ -67,27 +67,28 @@ jobs:
         run: |
           pip install -r lib/requirements.txt
       
-      - name: Generate PDF
+      - name: Generate PDFs (EN + FR)
         run: |
-          echo "🔄 Generating PDF from CV data..."
-          
-          # Create output directory
           mkdir -p out
-          
-          # Generate LaTeX from template
-          python lib/generate.py --resume resume.yml --template template.jinja --output tex/resume.tex
-          echo "✅ LaTeX template generated successfully"
-          
-          # Compile LaTeX to PDF  
-          python lib/compile.py --input tex/resume.tex --output out/Roberto-Vallado-CV.pdf
-          echo "✅ PDF generated successfully"
-          ls -la out/Roberto-Vallado-CV.pdf
-      
-      - name: Upload CV PDF artifact
+
+          echo "🔄 Generating English PDF..."
+          python lib/generate.py --resume resume.yml --template template.jinja --output tex/resume.tex --lang en
+          python lib/compile.py --input tex/resume.tex --output out/Roberto-Vallado-CV-EN.pdf
+          echo "✅ English PDF generated"
+
+          echo "🔄 Generating French PDF..."
+          python lib/generate.py --resume resume.yml --template template.jinja --output tex/resume.tex --lang fr
+          python lib/compile.py --input tex/resume.tex --output out/Roberto-Vallado-CV-FR.pdf
+          echo "✅ French PDF generated"
+          ls -la out/
+
+      - name: Upload CV PDF artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: cv-pdf
-          path: out/Roberto-Vallado-CV.pdf
+          name: cv-pdfs
+          path: |
+            out/Roberto-Vallado-CV-EN.pdf
+            out/Roberto-Vallado-CV-FR.pdf
           retention-days: 90
 
   build-website:
@@ -142,52 +143,52 @@ jobs:
           retention-days: 90
 
   deploy:
-    name: Deploy to Website Branch
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     needs: [build-cv, build-website]
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && needs.build-website.result == 'success'
-    
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: Download CV PDF artifact
+      - name: Download CV PDF artifacts
         if: needs.build-cv.result == 'success'
         uses: actions/download-artifact@v4
         with:
-          name: cv-pdf
+          name: cv-pdfs
           path: ./pdf/
-      
+
       - name: Download website artifact
         uses: actions/download-artifact@v4
         with:
           name: website-build
           path: ./website/
-      
-      - name: Copy PDF to website build
+
+      - name: Copy PDFs to website build
         run: |
-          # Copy PDF with web-friendly filename if CV build succeeded
-          if [ "${{ needs.build-cv.result }}" = "success" ] && [ -f "pdf/Roberto-Vallado-CV.pdf" ]; then
-            cp "pdf/Roberto-Vallado-CV.pdf" "website/roberto-vallado-cv.pdf"
-            echo "✅ PDF copied to website build as roberto-vallado-cv.pdf"
-            ls -lh website/roberto-vallado-cv.pdf
+          if [ "${{ needs.build-cv.result }}" = "success" ] && [ -f "pdf/Roberto-Vallado-CV-EN.pdf" ]; then
+            cp "pdf/Roberto-Vallado-CV-EN.pdf" "website/roberto-vallado-cv-en.pdf"
+            cp "pdf/Roberto-Vallado-CV-FR.pdf" "website/roberto-vallado-cv-fr.pdf"
+            echo "✅ Both PDFs copied to website build"
           else
-            echo "⚠️  CV build failed or PDF not found, deploying website without PDF"
+            echo "⚠️  CV build failed or PDFs not found, deploying website without PDFs"
           fi
-      
-      # - name: Deploy to website branch
-      #   uses: peaceiris/actions-gh-pages@v4
-      #   with:
-      #     personal_token: ${{ secrets.BOT_TOKEN }}
-      #     external_repository: ${{ github.repository }}
-      #     publish_branch: website
-      #     publish_dir: ./website/
-      #     user_name: 'liss-bot'
-      #     user_email: 'alicia-gh-bot@mail.as93.net'
-      #     commit_message: |
-      #       🪁 Deploy website from ${{ github.sha }}
-            
-      #       Auto-generated from main branch
-      #       Commit: ${{ github.event.head_commit.message }}
-      #     enable_jekyll: false
-      #     force_orphan: true
+
+      - name: Add CNAME for custom domain
+        run: echo "cv.robertovallado.dev" > website/CNAME
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./website/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
   comment-pr:
     name: Comment on PR

@@ -52,7 +52,7 @@
     pdfkeywords= {principal engineer, software engineering, CV, resume, {{ basics.name | latex_escape }}},
     pdfcreator = {LaTeX with XeTeX},
     pdfproducer = {XeTeX},
-    pdflang = {en-GB},
+    pdflang = {% if lang == 'fr' %}{fr-FR}{% else %}{en-GB}{% endif %},
     pdfcreationdate = {D:20120901162042+01'00'},
     pdfmoddate = {{ "{" }}{{ compilation_timestamp }}{{ "}" }},
     pdfdisplaydoctitle = true
@@ -88,19 +88,20 @@
 %     Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {% if work %}
-\cvsection{Experience}
+\cvsection{ {{ labels.experience | latex_escape }} }
 \begin{cventries}
 {%- for job in work %}
     \cventry
     { {{ job.position | latex_escape }} }
     { {{ job.name | latex_escape }} }
     {}
-    { {{ job.startDate | latex_escape | format_date }} – {{ job.endDate | latex_escape | format_date if job.endDate else 'Present' | latex_escape }} }
+    { {{ job.startDate | latex_escape | format_date }} -- {{ job.endDate | latex_escape | format_date if job.endDate else labels.present | latex_escape }} }
     {\begin{cvitems}
         {%- for highlight in job.highlights %}
         \item { {{ highlight | latex_escape }} }
         {%- endfor %}
     \end{cvitems}}
+{% if job.extra_space %}\vspace{6mm}{% endif %}
 {%- endfor %}
 \end{cventries}
 {% endif %}
@@ -110,15 +111,18 @@
 %     Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {% if education %}
-\cvsection{Education}
+\cvsection{ {{ labels.education | latex_escape }} }
 \begin{cventries}
 {%- for edu in education %}
     \cventry
-    { {{ edu.studyType | latex_escape }} in {{ edu.area | latex_escape }} }
+    { {{ edu.studyType | latex_escape }} {{ labels.edu_connector }} {{ edu.area | latex_escape }} }
     { {{ edu.institution | latex_escape }} }
     {}
-    {}
-    {Grade: {{ edu.score | latex_escape }}}
+    { {{ edu.endDate | format_date if edu.endDate else '' | latex_escape }} }
+    { {{ edu.score | latex_escape if edu.score else '' }} }
+{%- if not loop.last %}
+\vspace{4mm}
+{%- endif %}
 {%- endfor %}
 \end{cventries}
 {% endif %}
@@ -127,7 +131,7 @@
 %     Skills
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {% if skills %}
-\cvsection{Skills}
+\cvsection{ {{ labels.skills | latex_escape }} }
 \vspace{0.5mm}  % match Stats/Awards
 \begin{cvskills}
 {%- for skill in skills %}
@@ -141,7 +145,7 @@
 %     Achievements Statistics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {% if achievements %}
-\cvsection{Stats}
+\cvsection{ {{ labels.stats | latex_escape }} }
 \vspace{0.5mm}
 \begin{cvachievements}
 \setlength{\itemsep}{0mm}
@@ -156,7 +160,7 @@
 %     Awards
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {% if awards %}
-\cvsection{Awards}
+\cvsection{ {{ labels.awards | latex_escape }} }
 \vspace{0.5mm}
 \begin{cvachievements}
 \setlength{\itemsep}{0mm}
@@ -190,7 +194,7 @@
 \vspace{5mm}
 \begin{center}
     \tiny\color{lightgray}
-    Resume built with LaTeX, view source at
+    {{ labels.footer | latex_escape }}
     \href{https://github.com/robertovallado/cv}{ github.com/robertovallado/cv }.
 \end{center}
 \ 

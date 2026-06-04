@@ -1,207 +1,305 @@
 basics:
   name: Roberto Vallado
+  headline: Full-Stack Developer · Security Researcher · SEO Consultant
+  headline-fr: Développeur Full-Stack · Chercheur en Sécurité · Consultant SEO
   email: contact@robertovallado.dev
-  url: https://github.com/robertovallado
+  url: https://github.com/RobertoVallado
+  linkedin: https://www.linkedin.com/in/roberto-vallado/
   location:
-    address: Quebec, Canada
+    address: Québec, QC, Canada
+
 personal-statement: |
-  I help organisations turn complex technical challenges into simple,
-  scalable solutions that make a real difference for users and teams.
-  I've led multi-team organisations, modernised large-scale systems,
-  and built high-performance cultures grounded in openness, inclusion,
-  and technical excellence.
-  I'm passionate about open source, user privacy, and leaving a lasting
-  impact at both company and community level.
+  Full-stack software developer with over five years of experience building reliable, secure
+  applications in C# / .NET and Angular. I bring an active security perspective from bug bounty
+  research on Bugcrowd — hunting real-world vulnerabilities in REST APIs — a mindset that
+  directly shapes how I design systems, review code, and think about resilience every day.
+  Beyond traditional development, I am actively exploring agentic AI: building LLM-powered
+  automation workflows that help teams and individuals accomplish more with less friction.
+  I also do freelance web development and SEO consulting for marketing professionals and
+  businesses in Mexico, bridging technical depth with practical digital growth strategy.
+  As a team lead and former instructor, I communicate clearly, mentor effectively, and deliver.
+  Fluent in English, French, Portuguese and Spanish — I bring a genuinely international
+  perspective and collaborate naturally across cultures and markets.
+
+personal-statement-fr: |
+  Développeur full-stack avec plus de cinq ans d'expérience dans la création d'applications
+  fiables et sécurisées en C# / .NET et Angular. J'apporte une perspective active en sécurité
+  grâce à mes recherches en bug bounty sur Bugcrowd — traque de vulnérabilités réelles dans des
+  API REST — une approche qui façonne directement ma conception de systèmes et ma revue de code
+  au quotidien. Au-delà du développement traditionnel, j'explore activement l'IA agentique :
+  conception de flux de travail automatisés alimentés par des LLM qui aident les équipes à
+  accomplir davantage avec moins de friction. Je fais également du développement web et du
+  conseil SEO en freelance pour des professionnels du marketing au Mexique, alliant expertise
+  technique et stratégie de croissance numérique concrète. Chef d'équipe et ancien instructeur,
+  je communique clairement, mentor efficacement et livre des résultats. Maîtrise de l'anglais,
+  du français, du portugais et de l'espagnol.
+
 extra-links:
   work_history:
-    text: See all previous roles at linkedin.com/in/aliciasykes
-    link: https://linkedin.com/in/aliciasykes
+    text: See my full profile at linkedin.com/in/roberto-vallado
+    link: https://www.linkedin.com/in/roberto-vallado/
   projects:
-    text: See example projects built with each technology at apps.aliciasykes.com
-    link: https://apps.aliciasykes.com/
+    text: See my work at github.com/RobertoVallado
+    link: https://github.com/RobertoVallado
+
 education:
-- institution: Oxford Brookes
-  area: Computer Science
-  studyType: BSc
+- institution: Cégep Limoilou
+  area: Développement d'applications sécuritaires
+  studyType: AEC
   startDate: ''
-  endDate: ''
-  score: 1st Class Honors. Winner of Best Final Year Project Prize. President of Computing Society.
+  endDate: '2026-04'
+  score: 'Completing 2026'
+
+- institution: Sault College
+  area: Computer Programming
+  studyType: Ontario Diploma
+  startDate: ''
+  endDate: '2022-04'
+  score: 'Overall GPA 3.8'
+
 work:
-- name: loveholidays
-  position: Staff Software Engineer
-  startDate: 2024-11
+- name: Bugcrowd
+  position: Freelance Security Researcher
+  position-fr: Chercheur en Sécurité Indépendant
+  startDate: 2023-07
   endDate: Present
   highlights:
-  - Spearheaded accessibility strategy ahead of European Accessibility Act,
-    building site-wide scanning and reporting platform, and then coordinating
-    remediation across 6 teams.
-  - Strengthened infrastructure and reliability through Kubernetes/Terraform
-    and vendor collaboration (Fastly, DataDome).
-  - Served as learning champion, establishing resources, learning pathways and
-    fostering continuous upskilling and mentorship across the engineering department.
+  - Actively hunt for vulnerabilities across web applications and REST APIs using OWASP
+    methodologies, manual testing and custom tooling.
+  - Identified and responsibly disclosed multiple real-world security vulnerabilities,
+    producing clear reproduction-ready reports that enabled rapid remediation.
+  - Developed a security-first code review mindset that directly improves resilience and
+    trust boundaries in day-to-day development work.
+  highlights-fr:
+  - Recherche active de vulnérabilités dans les applications web et les API REST en appliquant
+    les méthodologies OWASP, les tests manuels et des outils personnalisés.
+  - Identification et divulgation responsable de plusieurs vulnérabilités réelles, avec
+    rédaction de rapports reproductibles permettant une remédiation rapide.
+  - Développement d'une approche de revue de code axée sur la sécurité qui améliore directement
+    la résilience des systèmes développés au quotidien.
 
-- name: AND Digital
-  position: Principal Engineer
-  startDate: 2022-08
-  endDate: 2024-10
+- name: SSM Innovation Centre
+  position: Intermediate Software Developer
+  position-fr: Développeur logiciel intermédiaire
+  startDate: 2023-06
+  endDate: Present
   highlights:
-  - Led architecture and development for a high-scale white-labelled mobile app for Frasers Group, achieving 1M+ downloads and a 4.8/5 rating on app stores (React Native).
-  - Delivered strategic technical leadership across multiple client projects including Lloyds Bank and International SOS, driving large-scale migrations to modern, maintainable stacks.
-  - Mentored and upskilled a team of 8–12 engineers through structured mini-projects, paired programming, and technical coaching, fostering a high-growth culture.
-  - Established and hosted a bi-weekly engineering guild attended by 40+ engineers, sharing best practices in performance, accessibility, testing, and architecture.
-  - Acted as a bridge between delivery and engineering excellence, ensuring long-term code quality and platform resilience without compromising speed.
-
-- name: Galaxy
-  position: VP of Frontend Engineering
-  startDate: 2020-06
-  endDate: 2022-05
-  highlights:
-  - Directed frontend engineering for Galaxy's flagship OTC trading platform,
-    enabling over $1B in trading volume with enterprise-grade performance and reliability.
-  - Architected and led a full-stack modernization of legacy codebases,
-    improving app load times by 50% and significantly reducing tech debt.
-  - Oversaw and scaled frontend engineering strategy, standards, and execution
-    across multiple teams, including hiring, mentoring, and tech governance.
-  - Shipped high-quality features rapidly through close cross-functional collaboration.
-    Increasing team velocity by 30% through improved CI/CD processes and tooling.
-  - Advocated for open standards, accessibility, and performance as core pillars
-    of engineering success.
+  - Lead day-to-day technical direction for the development team — driving architectural
+    decisions, code quality standards, and on-time delivery across active projects.
+  - Mentor junior and intermediate developers through code reviews, pair programming and
+    technical coaching, measurably improving team throughput and confidence.
+  - Diagnose and resolve performance bottlenecks and defects across a C# / .NET codebase,
+    consistently reducing time-to-resolution and improving system reliability.
+  - Own project planning and milestone estimation in close collaboration with project managers,
+    keeping stakeholders aligned and delivery predictable.
+  - Champion long-term maintainability in every architectural decision — evaluating trade-offs
+    between scalability, performance and team velocity.
+  highlights-fr:
+  - Pilotage de la direction technique quotidienne de l'équipe — décisions architecturales,
+    standards de qualité du code et livraisons dans les délais sur les projets actifs.
+  - Mentorat des développeurs juniors et intermédiaires via des revues de code, du pair
+    programming et du coaching technique, améliorant sensiblement la productivité de l'équipe.
+  - Diagnostic et résolution de problèmes de performance dans une base de code C# / .NET,
+    réduisant les délais de résolution et améliorant la fiabilité du système.
+  - Planification de projets et estimation des jalons en collaboration avec les gestionnaires,
+    assurant l'alignement des parties prenantes et la prévisibilité des livraisons.
+  - Défense de la maintenabilité à long terme dans chaque décision architecturale — évaluation
+    des compromis entre évolutivité, performance et vélocité d'équipe.
 
 - name: Freelance
-  position: Contract Software Engineer Lead
-  startDate: 2018-01
-  endDate: 2020-06
+  position: Web Developer & SEO Consultant
+  position-fr: Développeur Web & Consultant SEO
+  startDate: 2023-01
+  endDate: Present
   highlights:
-  - Acted as engineering lead on high-impact React Native projects including
-    Shell Recharge, driving delivery from design to deployment across platforms.
-  - Built a performant, scalable component library from scratch for a UK fintech
-    startup, establishing strong frontend architecture and design consistency.
-  - Delivered a full-stack IoT dashboard for Machine Max, visualizing real-time
-    CO2 and idling metrics from edge devices (Raspberry Pi + cloud stack).
-  - Consistently embedded in client teams as a trusted lead, providing
-    architecture reviews, CI/CD pipeline improvements, and technical mentorship.
+  - Design, build and optimize websites for marketing professionals and small businesses
+    in Mexico and Latin America, focusing on performance, UX and conversion.
+  - Apply SEO best practices including on-page optimization, structured data (Schema.org),
+    Core Web Vitals tuning and keyword strategy to measurably grow organic traffic.
+  - Integrate agentic AI and automation workflows (content pipelines, lead capture,
+    analytics dashboards) to amplify marketing outcomes with minimal overhead.
+  - Advise clients on Google Analytics 4 and Search Console setup, building data-driven
+    marketing habits and tracking what actually moves the needle.
+  highlights-fr:
+  - Conception, développement et optimisation de sites web pour des professionnels du marketing
+    et des PME au Mexique et en Amérique latine, avec focus sur la performance et la conversion.
+  - Application des meilleures pratiques SEO — optimisation on-page, données structurées
+    (Schema.org), Core Web Vitals et stratégie de mots-clés — pour augmenter le trafic organique.
+  - Intégration de l'IA agentique et de flux automatisés (pipelines de contenu, capture de leads,
+    tableaux de bord analytiques) pour amplifier les résultats marketing.
+  - Accompagnement des clients dans la configuration de Google Analytics 4 et Search Console,
+    les aidant à adopter des habitudes marketing basées sur les données.
 
-- name: Accenture
-  position: Developer
-  startDate: 2014-05
-  endDate: 2019-01
+- name: Sault College
+  position: Web Applications & Business Applications Instructor
+  position-fr: Instructeur — Applications Web & Applications d'affaires
+  startDate: 2023-09
+  endDate: 2024-06
   highlights:
-  - Took lead on the 3D/AR work for the B&Q bathroom planner (Angular, A-Frame)
-  - Lead a team of apprentices on the Accenture UKI Innovation Programme (Google Glass,
-    React, D3.js)
-  - Ran sessions on coding best practices, testing and observability for engineers
-    across the business
-  - Headed up the pair programming initiative within Accenture Digital and their clients
-  - Also supported with the roll-out of Universal Credit (Java), Boots NHS Prescriptions
-    integration (Node.js), E.ON Next Smart Meter portal (React) and the Post Office
-    Kiosk Terminal
+  - Designed and delivered curriculum for Web Applications and Business Applications
+    Development courses covering modern frameworks and real-world workflows.
+  - Maintained strong course completion rates through inclusive, adaptive teaching strategies
+    that met diverse learning styles and backgrounds.
+  - Incorporated current industry tools and trends into course material through ongoing
+    professional development, keeping content practical and up to date.
+  highlights-fr:
+  - Conception et livraison de curriculum pour les cours de développement d'applications web
+    et d'affaires, couvrant les frameworks modernes et les workflows réels.
+  - Maintien de forts taux de complétion grâce à des stratégies pédagogiques inclusives et
+    adaptatives répondant aux différents styles d'apprentissage.
+  - Intégration des tendances et outils actuels de l'industrie dans les cours via un
+    développement professionnel continu, maintenant le contenu pratique et à jour.
+
+- name: SSM Innovation Centre
+  position: Jr Programmer
+  position-fr: Programmeur junior
+  startDate: 2022-01
+  endDate: 2023-06
+  highlights:
+  - Accelerated ramp-up on a complex C# / .NET codebase, contributing meaningful features
+    and bug fixes within the first weeks on the project.
+  - Independently diagnosed and resolved complex technical problems, demonstrating strong
+    command of algorithms, data structures and debugging methodology.
+  - Collaborated effectively in an Agile team — participating in sprints, standups and
+    retrospectives while maintaining consistently high code quality.
+  highlights-fr:
+  - Prise en main rapide d'une base de code C# / .NET complexe, avec contributions
+    significatives aux fonctionnalités et corrections dans les premières semaines du projet.
+  - Diagnostic et résolution autonomes de problèmes techniques complexes, démontrant une
+    solide maîtrise des algorithmes, structures de données et techniques de débogage.
+  - Collaboration efficace au sein d'une équipe Agile — participation aux sprints, standups
+    et rétrospectives avec un niveau de qualité de code constamment élevé.
+
+- name: Sault College
+  position: Computer Programming Tutor
+  position-fr: Tuteur en programmation informatique
+  startDate: 2021-09
+  endDate: 2022-04
+  highlights:
+  - Provided targeted one-on-one and small-group tutoring for Computer Programming students,
+    helping learners close knowledge gaps and improve their grades.
+  - Diagnosed individual learning needs and adapted support strategies accordingly,
+    resulting in measurable improvements in comprehension and exam performance.
+  - Built trusted relationships with both students and faculty, acting as a bridge that
+    kept at-risk students engaged and on track.
+  highlights-fr:
+  - Tutorat ciblé individuel et en petits groupes pour les étudiants en programmation,
+    aidant à combler les lacunes et améliorer les résultats scolaires.
+  - Identification des besoins d'apprentissage individuels et adaptation des stratégies
+    de soutien, résultant en des améliorations mesurables en compréhension.
+  - Établissement de relations de confiance avec les étudiants et le corps professoral,
+    maintenant l'engagement des étudiants à risque jusqu'à la réussite de leur programme.
+  extra_space: true
+
+- name: SSM Innovation Centre
+  position: Jr Software Developer (Co-op)
+  position-fr: Développeur logiciel junior (stage coopératif)
+  startDate: 2021-04
+  endDate: 2021-09
+  highlights:
+  - Delivered production-quality features in C# and Angular, exceeding typical expectations
+    for an entry-level co-op placement.
+  - Contributed to code reviews and QA processes from day one, demonstrating initiative
+    and professional maturity early in career.
+  - Applied coding standards and best practices consistently, producing maintainable code
+    that required minimal rework post-review.
+  highlights-fr:
+  - Livraison de fonctionnalités de qualité production en C# et Angular, dépassant les
+    attentes habituelles pour un stage de premier échelon.
+  - Contribution aux revues de code et aux processus d'AQ dès le premier jour, démontrant
+    initiative et maturité professionnelle en début de carrière.
+  - Application cohérente des standards de codage et bonnes pratiques, produisant un code
+    maintenable nécessitant peu de révision après les revues.
+
 skills:
-- name: Frontend
-  keywords:
-  - React
-  - Svelte
-  - TypeScript
 - name: Backend
   keywords:
-  - Go
-  - Rust
-  - Node.js
+  - C#
+  - .NET
   - Python
-  - Java
-  - PHP
-- name: Mobile
+  - REST APIs
+  - Node.js
+- name: Frontend
   keywords:
-  - Kotlin
-  - Swift
-  - React Native
-  - Flutter
-- name: DevOps
+  - Angular
+  - React
+  - Next.js
+  - TypeScript
+- name: AI & Automation
   keywords:
-  - Ansible
-  - Kubernetes
-  - Terraform
-- name: Obs/Mon
-  keywords:
-  - Prometheus
-  - ELK stack
-  - OpenTelemetry
-  - Grafana
-- name: CI/CD
-  keywords:
-  - Argo CD
+  - Agentic AI
+  - LLM Integration
+  - Python Automation
   - GitHub Actions
-- name: Cloud
+- name: Marketing & SEO
   keywords:
-  - Vercel
-  - Netlify
-  - GCP
-  - Azure
+  - SEO
+  - Core Web Vitals
+  - Google Analytics
+  - Schema.org
 - name: Databases
   keywords:
+  - MSSQL
   - PostgreSQL
-  - SQLite
-  - Redis
   - MySQL
-  - MongoDB
+  - Entity Framework
+- name: DevOps & Tools
+  keywords:
+  - Docker
+  - Terraform
+  - Git
+  - Linux
+  - Azure
+- name: Security
+  keywords:
+  - Bug Bounty
+  - Vulnerability Research
+  - OWASP
+  - Burp Suite
 
 achievements:
-  - text: Top female developer on GitHub worldwide (out of 100m users)
-    source: 'https://gitstar-ranking.com/Lissy93'
-  - text: 10M+ Docker downloads across my open-source projects
-    source: 'https://hub.docker.com/u/lissy93'
-  - text: 10+ global hackathon wins, demonstrating rapid innovation
-    source: 'https://notes.aliciasykes.com/p/0s5s3uOtKj'
-  - text: 1M+ lines of code authored, maintainer of 100+ repos, powering 1M+ annual unique users
-    source: 'https://codestats.net/users/alicia'
-  - text: 10k+ subscribers on DEV.to blog demonstrating community impact and reach
-    source: 'https://dev.to/lissy93'
-  - text: Top 1% contributor on StackOverflow
-    source: 'https://stackoverflow.com/users/979052/alicia-sykes'
+  - text: Active bug bounty researcher on Bugcrowd — identified and responsibly disclosed
+      real-world security vulnerabilities in REST APIs and web applications
+    text-fr: Chercheur en sécurité actif sur Bugcrowd — identification et divulgation responsable
+      de vulnérabilités réelles dans des API REST et des applications web
+    source: 'https://bugcrowd.com'
+  - text: Technical lead at SSM Innovation Centre — driving architectural decisions, code
+      quality and developer growth across C# / .NET projects
+    text-fr: Lead technique chez SSM Innovation Centre --- pilotage des décisions architecturales,
+      qualité du code et croissance des développeurs dans des projets C# / .NET
+  - text: Freelance web developer and SEO consultant for marketing clients in Mexico —
+      delivering measurable improvements in organic visibility and digital presence
+    text-fr: Développeur web et consultant SEO freelance pour des clients au Mexique ---
+      améliorations mesurables en visibilité organique et présence numérique
+  - text: Building with agentic AI — designing LLM-powered automation workflows that
+      reduce manual overhead for businesses and marketing teams
+    text-fr: Construction avec l'IA agentique --- conception de flux de travail automatisés
+      alimentés par des LLM pour réduire la charge manuelle des équipes
+  - text: Former instructor at Sault College — designed and delivered Web Applications
+      and Business Applications Development curriculum
+    text-fr: Ancien instructeur au Collège Sault --- conception et livraison de curriculum
+      en développement d'applications web et d'affaires
+  - text: Graduated with a 3.8 GPA from Sault College Computer Programming Diploma
+    text-fr: Diplômé avec une moyenne de 3,8 du programme en programmation informatique du Collège Sault
+  - text: Fluent in four languages — English, French, Portuguese and Spanish — enabling
+      seamless collaboration across North American and Latin American markets
+    text-fr: Maîtrise de quatre langues --- anglais, français, portugais et espagnol ---
+      pour une collaboration fluide en Amérique du Nord et en Amérique latine
 
 awards:
-- title: Open UK Honours List (2025)
-  summary: Recognised for outstanding contributions to the tech and open-source sector
-  source: 'https://openuk.uk/honours/'
-- title: GitHub Accelerator Alumni
-  summary: Selected among 10 developers (Microsoft M12 partnership) to launch AI-security tooling
-  source: 'https://accelerator.github.com/'
-- title: Open UK Honours List (2024)
-  summary: Honoured for leadership and impact in open-source communities
-  source: 'https://openuk.uk/community/openuk-honours-lists/2024-honours-list'
-- title: Best Comp Sci Project
-  summary: Awarded by Oxford British Computer Society
-  source: 'https://oxon.bcs.org/2016/06/27/annual-student-prizes-2016/'
+- title: ADnet Award in Memory of Wilfred Lefresne (2022)
+  summary: Awarded by Sault College for academic excellence in Computer Programming
+  summary-fr: Décerné par le Collège Sault pour l'excellence académique en programmation informatique
+  source: ''
+- title: President's Academic Excellence Scholarship (2021)
+  summary: Awarded by Sault College for outstanding academic performance
+  summary-fr: Décerné par le Collège Sault pour des performances académiques exceptionnelles
+  source: ''
+- title: ADnet Award in Memory of Wilfred Lefresne (2021)
+  summary: Awarded by Sault College for academic excellence in Computer Programming
+  summary-fr: Décerné par le Collège Sault pour l'excellence académique en programmation informatique
+  source: ''
 
-projects:
-- name: 'Dashy'
-  description: 'Self-hosted dashboard deployed on 500k+ servers worldwide, driving adoption in enterprise and open-source communities'
-  github: 'lissy93/dashy'
-  url: 'https://dashy.to'
-  language: 'Vue'
-  stars: '20k'
-- name: 'Web-Check'
-  description: 'OSINT website scanner, with 100k MAU, widely used by security researchers and enterprises'
-  github: 'lissy93/web-check'
-  url: 'https://web-check.xyz'
-  language: 'React'
-  stars: '25k'
-- name: 'AdGuardian'
-  description: 'Rust-based CLI dashboard, for DNS and traffic monitoring in the terminal'
-  github: 'lissy93/AdGuardian-Term'
-  url: 'https://adguardian.as93.net/'
-  language: 'Rust'
-  stars: '1k'
-- name: 'Digital Defense'
-  description: 'Personal security assessment platform with 100k+ users, driving awareness of digital safety'
-  github: 'lissy93/personal-security-checklist'
-  url: 'https://digital-defense.io/'
-  language: 'Qwik'
-  stars: '18k'
-- name: 'Domain Locker'
-  description: 'Comprehensive domain management and security platform'
-  github: 'lissy93/domain-locker'
-  url: 'https://domain-locker.com/'
-  language: 'Angular'
-  stars: '300'
+projects: []
 
 

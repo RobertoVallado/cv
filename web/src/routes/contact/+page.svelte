@@ -1,74 +1,63 @@
-<script>
+<script lang="ts">
+  import { t } from '$lib/i18n';
   let emailVisible = false;
   const revealEmail = () => {
     emailVisible = true;
-    navigator.clipboard.writeText('hello@aliciasykes.com');
-  }
+    navigator.clipboard.writeText('contact@robertovallado.dev');
+  };
 </script>
 
-<svelte:head>	
-	<title>Alicia Sykes | CV | Contact</title>
+<svelte:head>
+  <title>{$t('contact.page_title')}</title>
 </svelte:head>
 
-<h1>Contact</h1>
+<h1>{$t('contact.h1')}</h1>
 
+<p>{$t('contact.intro')}</p>
 <p>
-  If you're looking for an accomplished full-stack Principal Engineer or Engineering Manager, then I'd love to hear from you!
-</p>
-<p>
-  You can get in touch by dropping me an email 
+  {$t('contact.email_label')}
   {#if emailVisible}
-    <a href="mailto:hello@aliciasykes.com">hello@aliciasykes.com</a>
+    <a href="mailto:contact@robertovallado.dev">contact@robertovallado.dev</a>
   {:else}
-    <button on:click={revealEmail} class="small-btn no-float" title="Click to show email address, and copy to clipboard">
-      Reveal email address
+    <button on:click={revealEmail} class="small-btn no-float" title={$t('contact.reveal')}>
+      {$t('contact.reveal')}
     </button>
   {/if}
-  <br>
-  Or for other communication channels,
-  see <a target="_blank" href="https://aliciasykes.com/contact">aliciasykes.com/contact</a>
 </p>
-<p>
-  Thank you for stopping by, and I really hope to hear from you!
-</p>
+<p>{$t('contact.thanks')}</p>
 
 <div class="some-text">
   <p>
-    You can learn more about me on the <a href="/intro">intro</a> page,
-    or browse the <a href="/skills">skills</a>, <a href="/experience">experience</a> and
-    <a href="/achievements">achievements</a> pages to see if I align with what you're looking for.
-    A shortened version of my CV in PDF format can be downloaded <a href="/download">here</a>.
+    {$t('contact.learn_more')} <a href="/intro">{$t('contact.intro_page')}</a>
+    {$t('contact.browse')}
+    <a href="/skills">{$t('contact.skills_page')}</a>,
+    <a href="/experience">{$t('contact.experience_page')}</a> {$t('achievements.and') || 'and'}
+    <a href="/achievements">{$t('contact.achievements_page')}</a>
+    {$t('contact.fit')}
   </p>
   <p>
-    Beyond that, I'm on LinkedIn, at <a href="https://www.linkedin.com/in/aliciasykes/">in/aliciasykes</a>
-    and GitHub at <a href="https://github.com/lissy93">@lissy93</a>.
-    A catalog of my recent open source apps can be found at <a href="https://apps.aliciasykes.com">apps.aliciasykes.com</a>
+    {$t('contact.pdf')} <a href="/download">{$t('contact.here')}</a>.
   </p>
   <p>
-    To see if I'd be a good fit for your team, you can view my <a href="/ideal-role">ideal role</a>
+    {$t('contact.also_on')}
+    <a href="https://www.linkedin.com/in/roberto-vallado/" target="_blank">LinkedIn</a>
+    {$t('contact.and')}
+    <a href="https://github.com/RobertoVallado" target="_blank">GitHub</a>.
   </p>
   <p>
-    If you've got any questions, or would like me to send over some references, feel free to reach out! :)
+    {$t('contact.ideal_role')} <a href="/ideal-role">{$t('contact.ideal_role_page')}</a>{$t('contact.ideal_role_end')}
   </p>
+  <p>{$t('contact.references')}</p>
 </div>
 
-
 <style lang="scss">
-.wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-}
 .some-text {
   font-size: 0.8rem;
   border: 2px solid var(--primary);
   padding: 0.25rem 0.5rem;
-  margin: 4rem auto 1rem auto;
+  margin: 2rem auto 1rem auto;
   border-radius: 4px;
-  background: #0000000a;
+  background: var(--primary-transparent);
   b, a { font-weight: 500; }
 }
 </style>
-

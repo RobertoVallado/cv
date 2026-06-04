@@ -1,33 +1,20 @@
 <script lang="ts">
 	import '../styles/resume-main.scss';
-	import { marked } from 'marked';
 
 	export let data: any;
 
-	const makeUrlretty = (url: string) => {
-		return url.replace(/(^\w+:|^)\/\//, '');
-	}
+	const makeUrlretty = (url: string) => url.replace(/(^\w+:|^)\/\//, '');
 
 	const formatData = (date: string) => {
-		if (!date.match(/^\d{4}-\d{2}$/)) {
-			return date;
-		}
+		if (!date.match(/^\d{4}-\d{2}$/)) return date;
 		const [year, month] = date.split('-');
 		const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 		return `${months[parseInt(month) - 1]} ${year}`;
 	}
-
-	const mdToHtml = (md: { text: string, source: string }) => {
-		if (!md || !md.text) {
-			return '';
-		}
-		return marked(md.text);
-	}
-
 </script>
 
-<svelte:head>	
-	<title>Alicia Sykes | CV | Home</title>
+<svelte:head>
+	<title>Roberto Vallado | CV</title>
 </svelte:head>
 
 <div class="resume">

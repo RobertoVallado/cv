@@ -1,72 +1,98 @@
 .resume, .skills-page {
 
   padding-bottom: 2rem;
-  
+
   p, ul, a {
     margin: 0;
     font-size: 0.85rem;
   }
+
   h1 {
     font-size: 1.4rem;
     font-weight: 600;
+    color: var(--primary);
+    letter-spacing: 0.04em;
   }
+
   h2 {
     margin: 1.5rem 0 0 0;
-    font-size: 1.2rem;
-    border-bottom: 2px solid #d1cfcf;
-    text-transform: capitalize;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--secondary);
+    padding-bottom: 0.3rem;
+    &::before { content: '// '; opacity: 0.4; color: var(--text-color-dim); }
   }
+
   h3 {
     margin: 0.75rem 0 0.25rem 0;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    text-transform: capitalize;
+    color: var(--text-color-bright);
+    letter-spacing: 0.03em;
   }
+
   h4 {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 400;
+    color: var(--text-color);
     .grey {
-      color: #a4a4a4;
+      color: var(--text-color-dim);
+      margin-left: 0.5rem;
+    }
+  }
+
+  ul {
+    color: var(--text-color);
+    padding-left: 1.25rem;
+    li {
+      margin: 0.2rem 0;
+      &::marker { color: var(--primary); }
     }
   }
 
   .basics {
     h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin: 0;
     }
     .contacts {
       display: flex;
       justify-content: space-between;
       width: fit-content;
-      margin: 0 auto;
+      margin: 0.5rem auto;
       gap: 1rem;
       flex: 1 1 1 0px;
-      margin: 0.5rem auto;
       @media screen and (max-width: 768px) {
         flex-direction: column;
         gap: 0.5rem;
       }
+      p { color: var(--text-color-dim); font-size: 0.8rem; }
+      a { color: var(--primary); }
     }
   }
+
   .personal-statement {
     p {
-
+      color: var(--text-color);
+      line-height: 1.6;
     }
   }
+
   .skills, .achievements {
     ul {
       margin-top: 0.75rem;
       padding-left: 1rem;
     }
   }
+
   .achievements {
     p {
       margin: 0.75rem 0;
-      a {
-        color: rgba(0, 0, 0, 0.8);
-      }
+      color: var(--text-color);
+      a { color: var(--primary); }
     }
   }
 }

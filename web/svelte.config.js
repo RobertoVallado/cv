@@ -16,7 +16,10 @@ const config = {
 			fallback: 'index.html',
 			precompress: false,
 			strict: false
-		}) : adapterAuto()
+		}) : adapterAuto(),
+		paths: {
+			base: ''
+		}
 	}
 };
 

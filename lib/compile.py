@@ -13,7 +13,7 @@ print(f"{Fore.CYAN}➡️ Starting: Compiling LaTex files into a PDF")
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
-def compile_latex(input_tex: str, output_pdf: str, timeout: int = 60) -> None:
+def compile_latex(input_tex: str, output_pdf: str, timeout: int = 300) -> None:
     """
     Compiles a LaTeX file into a PDF using xelatex.
 
