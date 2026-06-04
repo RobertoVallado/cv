@@ -235,16 +235,54 @@ web/
 
 ## CI / Deployment
 
-`build-site.yml` runs on every push to `main` touching `web/**`, `resume.yml`, or the workflow file.
+`build-site.yml` runs on every push to `main` or `dev` touching `web/**`, `resume.yml`, or the workflow file.
 
 **Steps:**
 1. Install Python + LaTeX; generate EN and FR PDFs from `resume.yml`
-2. Install Node.js; build SvelteKit static site (reads `resume.yml` at build time)
+2. Install Node.js; build SvelteKit static site (`GITHUB_PAGES=true npm run build`)
 3. Copy both PDFs into the build output
-4. Write `CNAME` (`cv.robertovallado.dev`) into the build output
-5. Deploy to GitHub Pages via `actions/deploy-pages`
+4. Push build output to the `gh-pages` branch via `npm run deploy`
 
-**One-time repo setting:** `Settings → Pages → Source → GitHub Actions`
+**One-time repo setting:** `Settings → Pages → Source → Deploy from a branch → gh-pages → / (root)`
+
+### Deploy locally
+
+```bash
+cd web
+npm install           # only needed once after adding/changing deps
+GITHUB_PAGES=true npm run build
+npm run deploy        # pushes web/build/ to the gh-pages branch
+```
+
+On Windows PowerShell:
+```powershell
+cd web
+npm install
+$env:GITHUB_PAGES="true"; npm run build
+npm run deploy
+```
+
+### Debugging deploy failures
+
+**`npm ci` fails with lock file mismatch** — `package-lock.json` is out of sync with `package.json`.
+Fix: run `npm install` in `web/`, commit the updated `package-lock.json`.
+
+```bash
+cd web && npm install
+git add package-lock.json
+git commit -m "update lock file"
+git push
+```
+
+**`gh-pages` push rejected** — the `gh-pages` branch has diverged.
+Fix: delete the remote branch and let CI recreate it.
+
+```bash
+git push origin --delete gh-pages
+```
+
+**Site shows old content after deploy** — GitHub Pages can take 1–2 min to propagate.
+Check the `gh-pages` branch on GitHub to confirm the deploy pushed new content.
 
 ### Custom domain DNS
 
@@ -252,7 +290,8 @@ web/
 |---|---|---|
 | `CNAME` | `cv` | `robertovallado.github.io` |
 
-Then: `Settings → Pages → Custom domain → cv.robertovallado.dev` → enable **Enforce HTTPS**.
+`Settings → Pages → Custom domain → cv.robertovallado.dev` → enable **Enforce HTTPS**.
+The `CNAME` file is committed at `web/static/CNAME` and automatically included in every build.
 
 ---
 
