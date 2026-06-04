@@ -148,13 +148,22 @@ jobs:
     needs: [build-cv, build-website]
     if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dev') && github.event_name != 'pull_request' && needs.build-website.result == 'success'
     permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      contents: write
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: 'web/package-lock.json'
+
+      - name: Install web dependencies
+        run: cd web && npm ci
+
       - name: Download CV PDF artifacts
         if: needs.build-cv.result == 'success'
         uses: actions/download-artifact@v4
@@ -166,29 +175,26 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: website-build
-          path: ./website/
+          path: web/build/
 
       - name: Copy PDFs to website build
         run: |
           if [ "${{ needs.build-cv.result }}" = "success" ] && [ -f "pdf/Roberto-Vallado-CV-EN.pdf" ]; then
-            cp "pdf/Roberto-Vallado-CV-EN.pdf" "website/roberto-vallado-cv-en.pdf"
-            cp "pdf/Roberto-Vallado-CV-FR.pdf" "website/roberto-vallado-cv-fr.pdf"
+            cp "pdf/Roberto-Vallado-CV-EN.pdf" "web/build/roberto-vallado-cv-en.pdf"
+            cp "pdf/Roberto-Vallado-CV-FR.pdf" "web/build/roberto-vallado-cv-fr.pdf"
             echo "✅ Both PDFs copied to website build"
           else
             echo "⚠️  CV build failed or PDFs not found, deploying website without PDFs"
           fi
 
-      - name: Add CNAME for custom domain
-        run: echo "cv.robertovallado.dev" > website/CNAME
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./website/
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to gh-pages branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          cd web && npm run deploy
 
   comment-pr:
     name: Comment on PR
