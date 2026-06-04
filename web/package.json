@@ -5,6 +5,7 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
+		"predeploy": "cross-env GITHUB_PAGES=true vite build",
 		"deploy": "gh-pages -d build --dotfiles",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -12,8 +13,8 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"gh-pages": "^6.3.0",
 		"@fontsource/fira-mono": "^5.0.0",
+		"cross-env": "^7.0.3",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-static": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
@@ -24,6 +25,7 @@
 		"eslint": "^9.0.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
+		"gh-pages": "^6.3.0",
 		"globals": "^15.0.0",
 		"js-yaml": "^4.1.0",
 		"prettier": "^3.1.1",

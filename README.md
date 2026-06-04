@@ -241,7 +241,7 @@ web/
 1. Install Python + LaTeX; generate EN and FR PDFs from `resume.yml`
 2. Install Node.js; build SvelteKit static site (`GITHUB_PAGES=true npm run build`)
 3. Copy both PDFs into the build output
-4. Push build output to the `gh-pages` branch via `npm run deploy`
+4. Push build output to the `gh-pages` branch via `npx gh-pages@6 -d web/build/ --dotfiles`
 
 **One-time repo setting:** `Settings → Pages → Source → Deploy from a branch → gh-pages → / (root)`
 
@@ -249,40 +249,28 @@ web/
 
 ```bash
 cd web
-npm install           # only needed once after adding/changing deps
-GITHUB_PAGES=true npm run build
-npm run deploy        # pushes web/build/ to the gh-pages branch
+npm install       # first time only
+npm run deploy    # builds with GITHUB_PAGES=true then pushes to gh-pages branch
 ```
 
-On Windows PowerShell:
-```powershell
-cd web
-npm install
-$env:GITHUB_PAGES="true"; npm run build
-npm run deploy
-```
+`predeploy` runs automatically before `deploy` — no need to build separately.
 
 ### Debugging deploy failures
 
-**`npm ci` fails with lock file mismatch** — `package-lock.json` is out of sync with `package.json`.
-Fix: run `npm install` in `web/`, commit the updated `package-lock.json`.
+**Site still shows README** — GitHub Pages source is pointing at the wrong place.
+Fix: `Settings → Pages → Source → Deploy from a branch → gh-pages → / (root)`
 
-```bash
-cd web && npm install
-git add package-lock.json
-git commit -m "update lock file"
-git push
-```
+**`gh-pages` branch doesn't exist yet** — the first successful deploy creates it.
+Check the Actions tab to confirm the deploy job completed without errors.
 
-**`gh-pages` push rejected** — the `gh-pages` branch has diverged.
-Fix: delete the remote branch and let CI recreate it.
+**`gh-pages` push rejected (non-fast-forward)** — the branch has diverged.
+Fix: delete the remote branch and let the next deploy recreate it.
 
 ```bash
 git push origin --delete gh-pages
 ```
 
-**Site shows old content after deploy** — GitHub Pages can take 1–2 min to propagate.
-Check the `gh-pages` branch on GitHub to confirm the deploy pushed new content.
+**Site shows old content** — GitHub Pages can take 1–2 min to propagate after a deploy.
 
 ### Custom domain DNS
 
@@ -291,7 +279,7 @@ Check the `gh-pages` branch on GitHub to confirm the deploy pushed new content.
 | `CNAME` | `cv` | `robertovallado.github.io` |
 
 `Settings → Pages → Custom domain → cv.robertovallado.dev` → enable **Enforce HTTPS**.
-The `CNAME` file is committed at `web/static/CNAME` and automatically included in every build.
+`web/static/CNAME` is committed and copied into the build automatically.
 
 ---
 
