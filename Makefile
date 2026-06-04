@@ -1,4 +1,4 @@
-.PHONY: all install validate generate compile pdf pdf-en pdf-fr markdown clean clean_tex web web_dev
+.PHONY: all install validate pdf pdf-en pdf-fr clean clean_tex web web_dev
 
 PYTHON     := $(shell which python3 2>/dev/null || which python)
 REQUIREMENTS := lib/requirements.txt
@@ -8,10 +8,9 @@ TEMPLATE   := template.jinja
 OUTPUT_TEX := tex/resume.tex
 OUTPUT_EN  := out/Roberto-Vallado-CV-EN.pdf
 OUTPUT_FR  := out/Roberto-Vallado-CV-FR.pdf
-OUTPUT_MD  := out/Roberto-Vallado-CV.md
 
-# Default: build both PDFs
-all: install validate pdf markdown
+# Default: validate + build both PDFs
+all: install validate pdf
 
 # Install Python deps
 install:
@@ -28,19 +27,18 @@ pdf: pdf-en pdf-fr
 pdf-en:
 	$(PYTHON) lib/generate.py --resume $(RESUME) --template $(TEMPLATE) --output $(OUTPUT_TEX) --lang en
 	$(PYTHON) lib/compile.py  --input $(OUTPUT_TEX) --output $(OUTPUT_EN)
+	cp $(OUTPUT_EN) web/static/roberto-vallado-cv-en.pdf
 
 # French PDF
 pdf-fr:
 	$(PYTHON) lib/generate.py --resume $(RESUME) --template $(TEMPLATE) --output $(OUTPUT_TEX) --lang fr
 	$(PYTHON) lib/compile.py  --input $(OUTPUT_TEX) --output $(OUTPUT_FR)
-
-# Markdown export
-markdown:
-	$(PYTHON) lib/markdown.py --input $(RESUME) --output $(OUTPUT_MD)
+	cp $(OUTPUT_FR) web/static/roberto-vallado-cv-fr.pdf
 
 # Clean everything
 clean: clean_tex
-	rm -f $(OUTPUT_EN) $(OUTPUT_FR) $(OUTPUT_MD) $(OUTPUT_TEX)
+	rm -f $(OUTPUT_EN) $(OUTPUT_FR) $(OUTPUT_TEX)
+	rm -f web/static/roberto-vallado-cv-*.pdf
 
 # Clean LaTeX auxiliary files only
 clean_tex:

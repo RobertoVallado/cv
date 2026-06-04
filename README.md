@@ -1,6 +1,6 @@
 # Roberto Vallado — CV
 
-Personal CV system. One file to rule them all: **[`resume.yml`](resume.yml)** is the single source of truth. Editing it updates the PDF, the live website, and all language versions automatically.
+Personal CV system with a single source of truth and bilingual (EN/FR) output across both PDF and website.
 
 **Live site:** [cv.robertovallado.dev](https://cv.robertovallado.dev)
 
@@ -9,26 +9,56 @@ Personal CV system. One file to rule them all: **[`resume.yml`](resume.yml)** is
 ## System overview
 
 ```
-resume.yml  ← the only file you need to edit
+resume.yml  ← edit this to update most content
     │
-    ├── lib/generate.py --lang en ──→ tex/resume.tex → out/Roberto-Vallado-CV-EN.pdf
-    ├── lib/generate.py --lang fr ──→ tex/resume.tex → out/Roberto-Vallado-CV-FR.pdf
+    ├── PDF pipeline
+    │     ├── lib/generate.py --lang en → tex/resume.tex → Roberto-Vallado-CV-EN.pdf
+    │     └── lib/generate.py --lang fr → tex/resume.tex → Roberto-Vallado-CV-FR.pdf
+    │           (French fields: personal-statement-fr, position-fr, highlights-fr,
+    │            text-fr on achievements, summary-fr on awards)
     │
-    └── web/  (SvelteKit static site)
-          ├── +layout.server.ts   reads resume.yml at build/dev time
-          ├── +page.server.ts     home page — full resume data
-          ├── experience/         job highlights (EN + FR from resume.yml)
-          ├── skills/             skill groups from resume.yml
-          └── achievements, contact, intro, ideal-role  (i18n JSON)
+    └── SvelteKit web (web/)
+          ├── server-side loads — read resume.yml directly at build/dev time
+          │     ├── +layout.server.ts  → basics (name, headline, social links)
+          │     ├── +page.server.ts    → full resume data (home page)
+          │     ├── experience/        → work entries + highlights-fr
+          │     └── skills/            → skill groups
+          │
+          └── i18n JSON — web/src/lib/locales/
+                ├── en.json  → intro bio, achievements page, contact,
+                │              ideal-role, soft skills, all UI labels
+                └── fr.json  → French translations of all the above
 ```
 
-Push to `main` → GitHub Actions builds the PDF and deploys the site to GitHub Pages. Done.
+Push to `main` → GitHub Actions builds both PDFs and deploys the site. Done.
+
+---
+
+## Content sources at a glance
+
+| What | Where to edit | Affects |
+|---|---|---|
+| Name, headline, email, links | `resume.yml` → `basics` | Sidebar, home page, PDF header |
+| Personal summary (EN) | `resume.yml` → `personal-statement` | Home page, PDF |
+| Personal summary (FR) | `resume.yml` → `personal-statement-fr` | Home page (FR), FR PDF |
+| Job history (EN) | `resume.yml` → `work[].highlights` | Home page, Experience page, PDF |
+| Job history (FR) | `resume.yml` → `work[].highlights-fr` | Experience page (FR), FR PDF |
+| Skills | `resume.yml` → `skills` | Home page, Skills page, PDF |
+| Home page achievements | `resume.yml` → `achievements` | Home page, PDF |
+| /achievements page stats | `web/src/lib/locales/en.json` → `achievements.stats` | Achievements page only |
+| /achievements page (FR) | `web/src/lib/locales/fr.json` → `achievements.stats` | Achievements page (FR) only |
+| Intro bio | `web/src/lib/locales/*.json` → `intro.p0–p5` | Intro page |
+| Contact text | `web/src/lib/locales/*.json` → `contact.*` | Contact page |
+| Ideal role text | `web/src/lib/locales/*.json` → `ideal_role.*` | Ideal Role page |
+| All nav / UI labels | `web/src/lib/locales/*.json` → `nav.*` | Everywhere |
+
+> **Note:** The `/achievements` page and the home page achievements section have separate content sources. Update both `resume.yml` achievements and the i18n JSON stats when changing achievements content.
 
 ---
 
 ## Editing your CV
 
-Everything lives in `resume.yml`. Open it, make changes, push.
+For most changes, edit `resume.yml` and push:
 
 ```bash
 git add resume.yml
@@ -36,34 +66,37 @@ git commit -m "update cv"
 git push
 ```
 
-The site and PDF rebuild automatically. The live site updates in a few minutes.
+For narrative page content (intro bio, contact text, ideal role, achievements page):
 
-### Key sections in resume.yml
+```bash
+# edit web/src/lib/locales/en.json  (English)
+# edit web/src/lib/locales/fr.json  (French)
+git add web/src/lib/locales/
+git commit -m "update page content"
+git push
+```
 
-| Section | What it controls |
-|---|---|
-| `basics` | Name, headline, email, GitHub URL, LinkedIn, location |
-| `personal-statement` | The summary paragraph on the home page and PDF |
-| `personal-statement-fr` | French version of the summary |
-| `work` | Job entries — each has `position`, `highlights`, and `highlights-fr` |
-| `education` | Degrees and diplomas |
-| `skills` | Skill groups shown on the Skills page and PDF |
-| `achievements` | Bullet points on the Achievements page and PDF |
-| `awards` | Awards listed on Achievements and PDF |
+The site and PDFs rebuild automatically on push. Live in a few minutes.
 
-### Bilingual content (EN / FR)
+---
 
-The site has a language toggle in the top-right header. French content is sourced from:
-- `personal-statement-fr` in resume.yml
-- `position-fr` and `highlights-fr` on each work entry
-- `web/src/lib/locales/fr.json` for all UI strings, page text, soft skills, achievements stats
+## Bilingual content (EN / FR)
 
-To add or update French content, edit either the `*-fr` fields in `resume.yml` or the `fr.json` locale file.
+The site has an **EN / FR** toggle in the top-right header. Locale is saved to `localStorage`.
+
+**In `resume.yml`**, French variants are parallel fields:
+- `personal-statement-fr` — French personal summary
+- `work[].position-fr` — French job title
+- `work[].highlights-fr` — French bullet points
+- `achievements[].text-fr` — French achievement text
+- `awards[].summary-fr` — French award summary
+
+**In the i18n JSON** (`web/src/lib/locales/fr.json`), every key in `en.json` has a French counterpart. Falls back to English for any missing key.
 
 ### Adding a new translation key
 
-1. Add the key + English value to `web/src/lib/locales/en.json`
-2. Add the French translation to `web/src/lib/locales/fr.json`
+1. Add key + English value to `web/src/lib/locales/en.json`
+2. Add French translation to `web/src/lib/locales/fr.json`
 3. Use `$t('your.key')` in the Svelte component
 
 ---
@@ -80,7 +113,7 @@ To add or update French content, edit either the `*-fr` fields in `resume.yml` o
 
 ### Web dev server
 
-The web app reads `resume.yml` directly from the project root at dev time — no GitHub push needed to see your changes.
+The web app reads `resume.yml` directly from the filesystem — no push to GitHub needed.
 
 ```bash
 cd web
@@ -88,39 +121,37 @@ npm install
 npm run dev        # http://localhost:5173
 ```
 
-Edit `resume.yml`, save, refresh — changes appear immediately.
+Edit `resume.yml` or the i18n JSON files, save, refresh — changes appear immediately.
 
 ### PDF generation
 
-The generator supports `--lang en` and `--lang fr`. Both PDFs are built from the same `resume.yml` — French fields (`personal-statement-fr`, `position-fr`, `highlights-fr`, etc.) are swapped in automatically when `--lang fr` is used.
+Both PDFs are built from the same `resume.yml`. French fields are swapped in automatically by `generate.py` when `--lang fr` is used.
 
 ```bash
 pip install -r lib/requirements.txt
 
 # English PDF
-python lib/generate.py \
-  --resume resume.yml --template template.jinja \
+python lib/generate.py --resume resume.yml --template template.jinja \
   --output tex/resume.tex --lang en
-python lib/compile.py \
-  --input tex/resume.tex --output out/Roberto-Vallado-CV-EN.pdf
+python lib/compile.py --input tex/resume.tex --output out/Roberto-Vallado-CV-EN.pdf
 
 # French PDF
-python lib/generate.py \
-  --resume resume.yml --template template.jinja \
+python lib/generate.py --resume resume.yml --template template.jinja \
   --output tex/resume.tex --lang fr
-python lib/compile.py \
-  --input tex/resume.tex --output out/Roberto-Vallado-CV-FR.pdf
+python lib/compile.py --input tex/resume.tex --output out/Roberto-Vallado-CV-FR.pdf
 ```
 
 Or via Make:
 
 ```bash
-make pdf        # builds both EN and FR
+make pdf        # builds both
 make pdf-en     # English only
 make pdf-fr     # French only
 ```
 
-**Windows note:** MiKTeX must be in PATH. If `xelatex` is not found, add it manually for your session:
+The Makefile also copies the PDFs to `web/static/` so the dev server can serve them for the Download button.
+
+**Windows — MiKTeX not found:**
 ```powershell
 $env:PATH = "C:\Program Files\MiKTeX\miktex\bin\x64;$env:PATH"
 ```
@@ -144,100 +175,76 @@ npm run preview
 ## Repository structure
 
 ```
-resume.yml              Single source of truth — edit this
-schema.json             JSON Schema for validating resume.yml
-template.jinja          Jinja2 → LaTeX CV template
-Makefile                Shortcuts for local builds
+resume.yml              Single source of truth for resume data
+schema.json             JSON Schema — validates resume.yml structure
+template.jinja          Jinja2 template → LaTeX (locale-aware labels + content)
+Makefile                Shortcuts: make pdf / pdf-en / pdf-fr / validate / clean
 
 lib/
-  generate.py           Renders template.jinja → LaTeX; --lang en|fr switches language
-  compile.py            Compiles LaTeX → PDF via XeLaTeX
-  validate.py           Validates resume.yml against schema.json
+  generate.py           Renders template; --lang en|fr swaps French fields in
+  compile.py            Runs XeLaTeX to produce PDF (timeout: 300s)
+  validate.py           Validates resume.yml + template syntax
   markdown.py           Exports resume.yml → Markdown
-  requirements.txt      Python deps (PyYAML, Jinja2, jsonschema, colorama)
+  requirements.txt      PyYAML, Jinja2, jsonschema, colorama
 
 tex/
-  resume-format.cls     Custom LaTeX class (dark header, typography, layout)
+  resume-format.cls     Custom LaTeX class (green header, fonts, layout commands)
   fontawesome.sty        FontAwesome icon support
-  fonts/                Roboto font family (used in PDF)
+  fonts/                Roboto font family
 
 out/
-  Roberto-Vallado-CV-EN.pdf  English PDF (generated)
-  Roberto-Vallado-CV-FR.pdf  French PDF (generated)
+  Roberto-Vallado-CV-EN.pdf   English PDF (generated)
+  Roberto-Vallado-CV-FR.pdf   French PDF (generated)
 
 web/
   src/
     lib/
-      i18n.ts             Custom i18n store — no library, locale-aware $t() function
-      locales/en.json     English UI strings, page content, soft skills, achievements
-      locales/fr.json     French translations
+      i18n.ts             Svelte store: $t(), setLocale(), locale — no npm dependency
+      locales/en.json     All English strings + page content
+      locales/fr.json     All French translations
     routes/
-      +layout.server.ts   Reads resume.yml → passes basics to layout
-      +layout.svelte      Sidebar, nav, language toggle (EN/FR)
-      +page.server.ts     Reads full resume.yml → home page
-      +page.svelte        Home — summary view of all CV sections
-      intro/              Personal bio (fully i18n)
-      experience/         Job history — reads highlights-fr from resume.yml
-      skills/             Skill groups + Language badge component
-      achievements/       Stats, awards (fully i18n)
-      contact/            Contact info (fully i18n)
-      ideal-role/         Role preferences (fully i18n)
-      download/           PDF download redirect
+      +layout.server.ts   Reads resume.yml → basics → sidebar + header
+      +layout.svelte      Sidebar, nav, EN/FR toggle button
+      +page.server.ts     Reads resume.yml → all sections → home page
+      +page.svelte        Home — summary view with links to each section
+      intro/              Bio (fully i18n, no server load)
+      experience/         Jobs from resume.yml, locale-aware highlights
+      skills/             Skill groups from resume.yml + Language badge component
+      achievements/       Stats + awards from i18n JSON (no server load)
+      contact/            Contact (fully i18n, no server load)
+      ideal-role/         Role preferences (fully i18n, no server load)
+      download/           Triggers browser download of EN or FR PDF
     components/
-      Language.svelte     Tech badge with SimpleIcons — 50+ languages configured
+      Language.svelte     Tech badge — SimpleIcons CDN, 50+ techs configured
     styles/
-      variables.scss      Color palette (forest green dark theme)
-      page-global.scss    Layout, sidebar, header
-      link.scss           Buttons, links
-      resume-main.scss    Home page resume styles
-  svelte.config.js        Static adapter config (base path '' for custom domain)
+      variables.scss      Color palette (#22a866 forest green, dark backgrounds)
+      page-global.scss    Layout, sidebar, header, responsive
+      link.scss           Buttons (.download-btn, .big-btn, .small-btn), links
+      resume-main.scss    Home page resume section styles
+  svelte.config.js        Static adapter; base '' for custom domain (no /cv prefix)
+  static/
+    roberto-vallado-cv-en.pdf  Copied here by make pdf-en (gitignored)
+    roberto-vallado-cv-fr.pdf  Copied here by make pdf-fr (gitignored)
 
 .github/workflows/
-  build-site.yml          Build PDF + SvelteKit → deploy to GitHub Pages
-  validate.yml            Validate resume.yml on pull requests
+  build-site.yml          Builds both PDFs → builds SvelteKit → deploys to GitHub Pages
+  validate.yml            Validates resume.yml on every pull request
 ```
-
----
-
-## How the web app works
-
-### Data flow
-
-All page data is loaded **server-side at build time** (SvelteKit `+page.server.ts` with `prerender = true`). This means:
-- `resume.yml` is read directly from the filesystem during `npm run dev` and `npm run build`
-- No network calls to GitHub at runtime
-- Changes to `resume.yml` are reflected immediately in `npm run dev`
-
-### i18n
-
-The language system (`src/lib/i18n.ts`) is a lightweight custom store — no library dependency:
-- `$t('key')` — returns the translated value for the active locale
-- `setLocale('fr')` — switches locale, persists to `localStorage`
-- Falls back to English for any missing French key
-- Arrays and objects (soft skills, requirements, stats) are stored in the JSON files and accessed reactively
-
-### Theme
-
-Dark theme using Roberto's personal brand green palette:
-- `--primary: #22a866` (forest green — from robertovallado.dev)
-- `--secondary: #5a9e7e`
-- `--background: #0b0f0c` (deep dark with warm undertone)
-- Font: Fira Mono throughout
 
 ---
 
 ## CI / Deployment
 
-The `build-site.yml` workflow triggers on push to `main` when `web/**`, `resume.yml`, or the workflow itself changes.
+`build-site.yml` runs on every push to `main` touching `web/**`, `resume.yml`, or the workflow file.
 
-**What it does:**
-1. Installs Python + LaTeX, generates and compiles the PDF
-2. Installs Node.js, builds the SvelteKit static site
-3. Copies both PDFs into the site build as `roberto-vallado-cv-en.pdf` and `roberto-vallado-cv-fr.pdf`
-4. Writes a `CNAME` file (`cv.robertovallado.dev`) into the build output
-5. Deploys to GitHub Pages via `actions/deploy-pages`
+**Steps:**
+1. Install Python + LaTeX; generate EN and FR PDFs from `resume.yml`
+2. Install Node.js; build SvelteKit static site (reads `resume.yml` at build time)
+3. Copy both PDFs into the build output
+4. Write `CNAME` (`cv.robertovallado.dev`) into the build output
+5. Deploy to GitHub Pages via `actions/deploy-pages`
 
-**One-time setup required:** `Settings → Pages → Source → GitHub Actions`
+**One-time repo setting:** `Settings → Pages → Source → GitHub Actions`
 
 ### Custom domain DNS
 
@@ -245,7 +252,7 @@ The `build-site.yml` workflow triggers on push to `main` when `web/**`, `resume.
 |---|---|---|
 | `CNAME` | `cv` | `robertovallado.github.io` |
 
-Then go to `Settings → Pages → Custom domain` → enter `cv.robertovallado.dev` → enable **Enforce HTTPS**.
+Then: `Settings → Pages → Custom domain → cv.robertovallado.dev` → enable **Enforce HTTPS**.
 
 ---
 

@@ -3,16 +3,8 @@
 :root {
   --font-body: 'Fira Mono', 'Courier New', 'Consolas', monospace;
   --font-mono: 'Fira Mono', monospace;
-  --color-bg-0: #080c09;
-  --color-bg-1: #0b0f0c;
-  --color-bg-2: #111912;
-  --color-theme-1: #22a866;
-  --color-theme-2: #5a9e7e;
-  --color-text: #cdd8d1;
-  --column-width: 42rem;
-  --column-margin-top: 4rem;
   font-family: var(--font-body);
-  color: var(--color-text);
+  color: var(--text-color);
 }
 
 body {

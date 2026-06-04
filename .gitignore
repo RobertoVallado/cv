@@ -31,8 +31,9 @@ node_modules/
 # Ignore compiled output
 out/*
 
-# Do not ignore specific files in out directory
-!out/Roberto-Vallado.pdf
+# Generated PDFs in web/static (copied by Makefile for local dev, by CI for production)
+web/static/roberto-vallado-cv-en.pdf
+web/static/roberto-vallado-cv-fr.pdf
 
 # Other ignored files and directories
 resume.aux

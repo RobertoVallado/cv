@@ -170,23 +170,6 @@
 \end{cvachievements}
 {% endif %}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Projects
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{% if projects %}
-\cvsection{Projects}
-\vspace{0.5mm}
-\begin{cvachievements}
-  \setlength{\itemsep}{0mm}
-{%- for proj in projects %}
-  \item {\hspace{-5pt}
-    \textbf{ {{ proj.name | latex_escape }} } ({{ proj.stars | latex_escape }} \raisebox{0.5pt}{\scriptsize\faStar}) \href{ {{ proj.url | latex_escape }} }{\scriptsize\color{lightgray}\faLink} \hfill \href{https://github.com/{{ proj.github | latex_escape }}}{\hspace{1pt}\faGithub\ {{ proj.github | latex_escape }}}\\
-    {{ proj.description | latex_escape }}
-  }
-{%- endfor %}
-\end{cvachievements}
-{% endif %}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Footer

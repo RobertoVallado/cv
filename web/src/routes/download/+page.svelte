@@ -13,7 +13,11 @@
         const pdfUrl = `/roberto-vallado-cv-${lang}.pdf`;
         const response = await fetch(pdfUrl, { method: 'HEAD' });
         if (response.ok) {
-          window.location.href = pdfUrl;
+          const a = document.createElement('a');
+          a.href = pdfUrl;
+          a.download = `Roberto-Vallado-CV-${lang.toUpperCase()}.pdf`;
+          a.click();
+          loading = false;
         } else {
           throw new Error('PDF not found');
         }
@@ -34,7 +38,11 @@
 {#if loading && !error}
   <div class="loading">
     <h1>{$locale === 'fr' ? 'Téléchargement en cours...' : 'Downloading CV...'}</h1>
-    <p>{$locale === 'fr' ? 'Votre téléchargement devrait démarrer automatiquement.' : 'Your download should start automatically.'}</p>
+    <p>{$locale === 'fr' ? 'Votre téléchargement démarre automatiquement.' : 'Your download is starting automatically.'}</p>
+  </div>
+{:else if !error}
+  <div class="loading">
+    <p>{$locale === 'fr' ? 'Téléchargement lancé.' : 'Download started.'} <a href="/">{$locale === 'fr' ? 'Retour' : 'Go back'}</a></p>
   </div>
 {:else if error}
   <div class="error">
