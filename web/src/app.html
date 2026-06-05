@@ -4,27 +4,39 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/836328d425.js" crossorigin="anonymous"></script>
 
-		<!-- Core info -->
-		<title>Roberto Vallado | CV</title>
-		<meta name="description" content="The CV of Roberto Vallado — software developer with a security mindset.">
-		<meta name="keywords" content="Roberto Vallado, CV, Resume, Software Developer, Security">
+		<!-- Author & robots -->
 		<meta name="author" content="Roberto Vallado">
+		<meta name="robots" content="index, follow">
 
-		<!-- Social media meta tags (Open Graph + Twitter) -->
-		<meta property="og:site_name" content="CV: Roberto Vallado">
-		<meta property="og:type" content="website">
+		<!-- Open Graph (social sharing) -->
+		<meta property="og:site_name" content="Roberto Vallado — CV">
+		<meta property="og:type" content="profile">
 		<meta property="og:url" content="https://cv.robertovallado.dev">
-		<meta property="og:title" content="Roberto Vallado — Software Developer CV">
-		<meta property="og:description" content="Software developer with a security mindset — C# / .NET, Angular, REST APIs, bug bounty experience.">
+		<meta property="og:title" content="Roberto Vallado — Full-Stack Developer &amp; Security Researcher">
+		<meta property="og:description" content="CV of Roberto Vallado — Full-Stack Developer &amp; Security Researcher based in Québec, Canada. C#/.NET, Angular, REST APIs, bug bounty research.">
+		<meta property="og:image" content="https://cv.robertovallado.dev/banner.png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:locale" content="en_CA">
+		<meta property="profile:first_name" content="Roberto">
+		<meta property="profile:last_name" content="Vallado">
+
+		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:url" content="https://cv.robertovallado.dev">
-		<meta name="twitter:title" content="Roberto Vallado — Software Developer CV">
-		<meta name="twitter:description" content="Software developer with a security mindset — C# / .NET, Angular, REST APIs, bug bounty experience.">
+		<meta name="twitter:title" content="Roberto Vallado — Full-Stack Developer &amp; Security Researcher">
+		<meta name="twitter:description" content="CV of Roberto Vallado — Full-Stack Developer &amp; Security Researcher based in Québec, Canada. C#/.NET, Angular, REST APIs, bug bounty research.">
+		<meta name="twitter:image" content="https://cv.robertovallado.dev/banner.png">
 
+		<!-- Performance: font preconnect before stylesheet -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<script defer src="https://kit.fontawesome.com/836328d425.js" crossorigin="anonymous"></script>
+
+		<!-- Per-page title, description, canonical, and structured data injected here -->
+		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>

@@ -15,6 +15,7 @@
 
 <svelte:head>
 	<title>Roberto Vallado | CV</title>
+	<meta name="description" content="CV of Roberto Vallado — Full-Stack Developer &amp; Security Researcher based in Québec, Canada. View work experience, education, skills, and achievements.">
 </svelte:head>
 
 <div class="resume">

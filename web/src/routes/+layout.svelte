@@ -4,6 +4,8 @@
   import { page } from '$app/stores';
   import { onNavigate } from '$app/navigation';
 
+  const SITE_URL = 'https://cv.robertovallado.dev';
+
   import '../app.css';
   import '../styles/variables.scss';
   import '../styles/link.scss';
@@ -65,6 +67,24 @@
 
   $: headerLinks = socials.map(({ name, url }) => ({ name, url }));
 
+  $: canonical = SITE_URL + ($page.url.pathname.replace(/\/$/, '') || '/');
+
+  $: jsonLd = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: data.basics.name,
+    jobTitle: data.basics.headline,
+    email: data.basics.email,
+    url: SITE_URL,
+    sameAs: [data.basics.url, data.basics.linkedin].filter(Boolean),
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Québec',
+      addressRegion: 'QC',
+      addressCountry: 'CA',
+    },
+  });
+
   $: navLinks = [
     { key: 'nav.intro',        url: '/intro',        icon: 'fa-address-card' },
     { key: 'nav.experience',   url: '/experience',   icon: 'fa-briefcase' },
@@ -72,6 +92,11 @@
     { key: 'nav.skills',       url: '/skills',       icon: 'fa-code' },
   ];
 </script>
+
+<svelte:head>
+  <link rel="canonical" href={canonical}>
+  {@html `<script type="application/ld+json">${jsonLd}</script>`}
+</svelte:head>
 
 <div class="app">
   <aside>

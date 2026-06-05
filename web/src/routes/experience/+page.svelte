@@ -23,6 +23,7 @@
 
 <svelte:head>
   <title>{$t('experience.page_title')}</title>
+  <meta name="description" content="Work history of Roberto Vallado — Full-Stack Developer roles in C#/.NET, Angular, REST APIs, bug bounty security research, and SEO consulting. Québec, Canada.">
 </svelte:head>
 
 <h1>{$t('experience.h1')}</h1>

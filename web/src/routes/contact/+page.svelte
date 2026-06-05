@@ -9,6 +9,7 @@
 
 <svelte:head>
   <title>{$t('contact.page_title')}</title>
+  <meta name="description" content="Get in touch with Roberto Vallado — Full-Stack Developer &amp; Security Researcher open to new opportunities. Available via email, LinkedIn, and GitHub.">
 </svelte:head>
 
 <h1>{$t('contact.h1')}</h1>

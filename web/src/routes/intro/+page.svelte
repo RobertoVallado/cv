@@ -13,6 +13,7 @@
 
 <svelte:head>
   <title>{$t('intro.page_title')}</title>
+  <meta name="description" content="About Roberto Vallado — Full-Stack Developer and Security Researcher with 5+ years of experience in C#/.NET, Angular, REST APIs, and security research. Based in Québec, Canada.">
 </svelte:head>
 
 <h1>{$t('intro.h1')}</h1>

@@ -14,6 +14,7 @@
 
 <svelte:head>
   <title>{$t('ideal_role.page_title')}</title>
+  <meta name="description" content="Roberto Vallado's ideal job — work values, environment preferences, and what makes a great role. Open to full-stack, security, and SEO-focused positions.">
 </svelte:head>
 
 <h1>{$t('ideal_role.h1')}</h1>

@@ -8,6 +8,7 @@
 
 <svelte:head>
   <title>{$t('skills.page_title')}</title>
+  <meta name="description" content="Technical skills of Roberto Vallado — C#/.NET, Python, Angular, React, TypeScript, REST APIs, AI automation, SEO, PostgreSQL, Docker, and security research tools.">
 </svelte:head>
 
 <h1>{$t('skills.h1')}</h1>

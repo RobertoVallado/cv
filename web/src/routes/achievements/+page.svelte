@@ -10,6 +10,7 @@
 
 <svelte:head>
   <title>{$t('achievements.page_title')}</title>
+  <meta name="description" content="Awards, certifications, and professional highlights of Roberto Vallado — developer, security researcher, and SEO consultant. Recognised achievements in software and cybersecurity.">
 </svelte:head>
 
 <h2>{$t('achievements.h2')}</h2>
