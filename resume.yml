@@ -9,28 +9,23 @@ basics:
     address: Québec, QC, Canada
 
 personal-statement: |
-  Full-stack developer with over five years of experience building reliable, secure
-  applications in C# / .NET and Angular. I also do bug bounty research on Bugcrowd,
-  hunting real-world vulnerabilities in REST APIs, which has shaped how I think about
-  system design, code reviews and resilience day to day.
-  I'm also into agentic AI, building LLM-powered automation workflows that help teams
-  get more done. I do freelance web development and SEO consulting for marketing
-  professionals and businesses in Mexico, combining technical know-how with practical
-  growth strategy. As a team lead and former instructor, I communicate clearly, enjoy
-  mentoring and get things done. Fluent in English, French, Portuguese and Spanish,
-  I've worked with people across very different cultural backgrounds and markets.
+  Full-stack developer with over five years of hands-on experience in C# / .NET and
+  Angular, most recently as technical lead on a software development team. Drove
+  architecture decisions, code quality standards and on-time delivery across multiple
+  active projects while mentoring a team of four. Security is woven into how I work:
+  active bug bounty research on Bugcrowd shapes how I design systems and review code
+  every day. Former instructor, clear communicator, strong mentor. Fluent in English,
+  French, Portuguese and Spanish.
 
 personal-statement-fr: |
-  Développeur full-stack avec plus de cinq ans d'expérience dans la création
-  d'applications fiables et sécurisées en C# / .NET et Angular. Je fais aussi de la
-  recherche en bug bounty sur Bugcrowd, à la chasse de vulnérabilités réelles dans des
-  API REST, ce qui a vraiment influencé ma façon de concevoir les systèmes et de faire
-  des revues de code. Je m'intéresse aussi à l'IA agentique et je construis des
-  workflows automatisés propulsés par des LLM pour aider les équipes à aller plus vite.
-  Je fais du développement web et du conseil SEO en freelance pour des professionnels
-  du marketing et des entreprises au Mexique. Chef d'équipe et ancien instructeur, je
-  communique clairement, j'aime encadrer les autres et je livre des résultats. Maîtrise
-  de l'anglais, du français, du portugais et de l'espagnol.
+  Développeur full-stack avec plus de cinq ans d'expérience en C# / .NET et Angular,
+  récemment en tant que lead technique au sein d'une équipe de développement. Pilotage
+  des décisions d'architecture, des standards de qualité du code et des livraisons dans
+  les délais sur plusieurs projets actifs, tout en encadrant une équipe de quatre
+  développeurs. La sécurité fait partie de ma façon de travailler: mes recherches en
+  bug bounty sur Bugcrowd façonnent ma conception de systèmes et mes revues de code au
+  quotidien. Ancien instructeur, communicateur clair, mentor accompli. Maîtrise de
+  l'anglais, du français, du portugais et de l'espagnol.
 
 extra-links:
   work_history:
@@ -46,7 +41,7 @@ education:
   studyType: AEC
   startDate: ''
   endDate: '2026-04'
-  score: 'Completing 2026'
+  score: 'Completed April 2026'
 
 - institution: Sault College
   area: Computer Programming
@@ -82,8 +77,8 @@ work:
   startDate: 2023-01
   endDate: Present
   highlights:
-  - Build and optimize websites for marketing professionals and small businesses
-    in Mexico and Latin America.
+  - Worked with 31 marketing clients across Mexico and Latin America, building
+    and optimizing their websites for performance and conversion.
   - Handle SEO including on-page optimization, structured data, Core Web Vitals
     and keyword strategy.
   - Set up AI-powered automations like content pipelines, lead capture and
@@ -91,8 +86,8 @@ work:
   - Help clients set up Google Analytics 4 and Search Console so they can see
     what's actually working.
   highlights-fr:
-  - Conception et optimisation de sites web pour des professionnels du marketing
-    et des PME au Mexique et en Amérique latine.
+  - Accompagnement de 31 clients marketing au Mexique et en Amérique latine,
+    conception et optimisation de leurs sites pour la performance et la conversion.
   - Gestion du SEO, incluant l'optimisation on-page, les données structurées, Core Web Vitals
     et la stratégie de mots-clés.
   - Mise en place d'automations alimentées par l'IA comme des pipelines de
@@ -106,23 +101,20 @@ work:
   startDate: 2023-06
   endDate: 2026-06
   highlights:
-  - Lead technical direction for the dev team, covering architecture decisions,
-    code quality and delivery timelines.
-  - Mentor junior and intermediate developers through code reviews, pair
-    programming and one-on-ones.
-  - Track down and fix performance issues and bugs across our C# / .NET codebase.
-  - Work closely with project managers on planning and milestone estimates.
-  - Always keep long-term maintainability in mind when making architecture calls.
+  - Led technical direction for the development team, owning architecture decisions,
+    code quality standards and delivery across multiple active projects.
+  - Mentored a team of 4 developers, including a summer student, through code reviews,
+    pair programming and one-on-ones.
+  - Reduced xUnit integration test run times by 20% in CI/CD pipelines, shortening
+    feedback loops and improving throughput for the whole team.
   highlights-fr:
-  - Pilotage de la direction technique de l'équipe, des décisions d'architecture,
-    de la qualité du code et des délais de livraison.
-  - Accompagnement des développeurs juniors et intermédiaires via des revues de
-    code, du pair programming et des rencontres individuelles.
-  - Identification et correction des problèmes de performance et des bugs dans
-    notre base de code C# / .NET.
-  - Collaboration étroite avec les gestionnaires de projets pour la planification
-    et les estimations de jalons.
-  - Maintenabilité à long terme toujours en tête lors des décisions d'architecture.
+  - Pilotage de la direction technique de l'équipe, avec responsabilité sur les
+    décisions d'architecture, les standards de qualité et les livraisons sur plusieurs
+    projets actifs.
+  - Encadrement d'une équipe de 4 développeurs, dont un étudiant en stage d'été,
+    via des revues de code, du pair programming et des rencontres individuelles.
+  - Réduction de 20% du temps d'exécution des tests d'intégration xUnit dans les
+    pipelines CI/CD, améliorant la cadence et le feedback de toute l'équipe.
 
 - name: Sault College
   position: Web Applications & Business Applications Instructor
@@ -131,14 +123,14 @@ work:
   endDate: 2024-06
   highlights:
   - Designed and taught Web Applications and Business Applications Development
-    courses.
+    courses to cohorts of 30 to 35 students.
   - Kept strong completion rates by adapting to different learning styles
     and backgrounds.
   - Regularly updated course content to keep it current with industry tools
     and practices.
   highlights-fr:
   - Conception et enseignement des cours de développement d'applications web
-    et d'affaires.
+    et d'affaires à des cohortes de 30 à 35 étudiants.
   - Maintien de bons taux de complétion en adaptant l'enseignement aux
     différents styles d'apprentissage.
   - Mise à jour régulière du contenu des cours pour rester en phase avec les
@@ -154,15 +146,11 @@ work:
     features and fixes within the first few weeks.
   - Solved complex technical problems independently, drawing on solid knowledge
     of algorithms, data structures and debugging.
-  - Worked well in an Agile team, joining sprints, standups and retros while
-    keeping code quality high.
   highlights-fr:
   - Prise en main rapide d'une base de code C# / .NET complexe, avec des
     contributions aux fonctionnalités et corrections dès les premières semaines.
   - Résolution autonome de problèmes techniques complexes grâce à une bonne
     maîtrise des algorithmes, structures de données et débogage.
-  - Bonne collaboration en équipe Agile, avec participation aux sprints,
-    standups et rétrospectives en maintenant une haute qualité de code.
 
 - name: Sault College
   position: Computer Programming Tutor
@@ -172,7 +160,7 @@ work:
   highlights:
   - Tutored Computer Programming students one-on-one and in small groups,
     helping them fill knowledge gaps and improve their grades.
-  - Figured out where each student was struggling and adjusted how I helped them.
+  - Identified each student's gaps and tailored sessions accordingly.
   - Built good relationships with students and faculty, and helped keep
     at-risk students engaged and on track.
   highlights-fr:
@@ -251,27 +239,20 @@ achievements:
     text-fr: Chercheur en sécurité actif sur Bugcrowd, identification et divulgation
       responsable de vulnérabilités réelles dans des API REST et des applications web.
     source: 'https://bugcrowd.com'
-  - text: Technical lead at SSM Innovation Centre, handling architecture decisions,
-      code quality and developer growth on C# / .NET projects.
-    text-fr: Lead technique chez SSM Innovation Centre, pilotage des décisions
-      architecturales, de la qualité du code et de la croissance des développeurs
-      sur des projets C# / .NET.
-  - text: Freelance web developer and SEO consultant for clients in Mexico, helping
-      them grow their organic visibility and digital presence.
-    text-fr: Développeur web et consultant SEO freelance pour des clients au Mexique,
-      les aidant à améliorer leur visibilité organique et leur présence numérique.
-  - text: Building agentic AI workflows that help businesses and marketing teams
-      automate the repetitive stuff.
-    text-fr: Construction de workflows d'IA agentique pour aider les entreprises et
-      les équipes marketing à automatiser les tâches répétitives.
-  - text: Former instructor at Sault College, where I designed and taught Web
-      Applications and Business Applications Development courses.
-    text-fr: Ancien instructeur au Collège Sault, où j'ai conçu et enseigné les cours
-      de développement d'applications web et d'affaires.
+  - text: Completed a Secure Application Development AEC at Cégep Limoilou in April 2026,
+      building formal cybersecurity foundations alongside active bug bounty research.
+    text-fr: AEC en développement d'applications sécuritaires complétée au Cégep Limoilou
+      en avril 2026, en parallèle de recherches actives en bug bounty.
+  - text: Returned to teach at Sault College just a year after graduating from the same
+      program, designing and delivering Web Applications and Business Applications courses.
+    text-fr: Revenu enseigner au Collège Sault un an seulement après y avoir obtenu son
+      diplôme, en concevant et dispensant des cours de développement d'applications.
   - text: Graduated with a 3.8 GPA from Sault College Computer Programming Diploma.
     text-fr: Diplômé avec une moyenne de 3,8 du programme en programmation informatique du Collège Sault.
-  - text: Fluent in English, French, Portuguese and Spanish.
-    text-fr: Maîtrise de l'anglais, du français, du portugais et de l'espagnol.
+  - text: Fluent in English, French, Portuguese and Spanish, able to work across Canada,
+      the US and Latin America without a language barrier.
+    text-fr: Maîtrise de l'anglais, du français, du portugais et de l'espagnol, avec une
+      capacité à travailler au Canada, aux États-Unis et en Amérique latine sans barrière linguistique.
 
 awards:
 - title: ADnet Award in Memory of Wilfred Lefresne (2022)
