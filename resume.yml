@@ -9,30 +9,28 @@ basics:
     address: Québec, QC, Canada
 
 personal-statement: |
-  Full-stack software developer with over five years of experience building reliable, secure
-  applications in C# / .NET and Angular. I bring an active security perspective from bug bounty
-  research on Bugcrowd — hunting real-world vulnerabilities in REST APIs — a mindset that
-  directly shapes how I design systems, review code, and think about resilience every day.
-  Beyond traditional development, I am actively exploring agentic AI: building LLM-powered
-  automation workflows that help teams and individuals accomplish more with less friction.
-  I also do freelance web development and SEO consulting for marketing professionals and
-  businesses in Mexico, bridging technical depth with practical digital growth strategy.
-  As a team lead and former instructor, I communicate clearly, mentor effectively, and deliver.
-  Fluent in English, French, Portuguese and Spanish — I bring a genuinely international
-  perspective and collaborate naturally across cultures and markets.
+  Full-stack developer with over five years of experience building reliable, secure
+  applications in C# / .NET and Angular. I also do bug bounty research on Bugcrowd,
+  hunting real-world vulnerabilities in REST APIs, which has shaped how I think about
+  system design, code reviews and resilience day to day.
+  I'm also into agentic AI, building LLM-powered automation workflows that help teams
+  get more done. I do freelance web development and SEO consulting for marketing
+  professionals and businesses in Mexico, combining technical know-how with practical
+  growth strategy. As a team lead and former instructor, I communicate clearly, enjoy
+  mentoring and get things done. Fluent in English, French, Portuguese and Spanish,
+  I've worked with people across very different cultural backgrounds and markets.
 
 personal-statement-fr: |
-  Développeur full-stack avec plus de cinq ans d'expérience dans la création d'applications
-  fiables et sécurisées en C# / .NET et Angular. J'apporte une perspective active en sécurité
-  grâce à mes recherches en bug bounty sur Bugcrowd — traque de vulnérabilités réelles dans des
-  API REST — une approche qui façonne directement ma conception de systèmes et ma revue de code
-  au quotidien. Au-delà du développement traditionnel, j'explore activement l'IA agentique :
-  conception de flux de travail automatisés alimentés par des LLM qui aident les équipes à
-  accomplir davantage avec moins de friction. Je fais également du développement web et du
-  conseil SEO en freelance pour des professionnels du marketing au Mexique, alliant expertise
-  technique et stratégie de croissance numérique concrète. Chef d'équipe et ancien instructeur,
-  je communique clairement, mentor efficacement et livre des résultats. Maîtrise de l'anglais,
-  du français, du portugais et de l'espagnol.
+  Développeur full-stack avec plus de cinq ans d'expérience dans la création
+  d'applications fiables et sécurisées en C# / .NET et Angular. Je fais aussi de la
+  recherche en bug bounty sur Bugcrowd, à la chasse de vulnérabilités réelles dans des
+  API REST, ce qui a vraiment influencé ma façon de concevoir les systèmes et de faire
+  des revues de code. Je m'intéresse aussi à l'IA agentique et je construis des
+  workflows automatisés propulsés par des LLM pour aider les équipes à aller plus vite.
+  Je fais du développement web et du conseil SEO en freelance pour des professionnels
+  du marketing et des entreprises au Mexique. Chef d'équipe et ancien instructeur, je
+  communique clairement, j'aime encadrer les autres et je livre des résultats. Maîtrise
+  de l'anglais, du français, du portugais et de l'espagnol.
 
 extra-links:
   work_history:
@@ -64,47 +62,19 @@ work:
   startDate: 2023-07
   endDate: Present
   highlights:
-  - Actively hunt for vulnerabilities across web applications and REST APIs using OWASP
-    methodologies, manual testing and custom tooling.
-  - Identified and responsibly disclosed multiple real-world security vulnerabilities,
-    producing clear reproduction-ready reports that enabled rapid remediation.
-  - Developed a security-first code review mindset that directly improves resilience and
-    trust boundaries in day-to-day development work.
+  - Hunt for vulnerabilities in web apps and REST APIs using OWASP methods,
+    manual testing and custom tooling.
+  - Found and reported several real-world security vulnerabilities with clear,
+    reproducible write-ups that helped teams fix them quickly.
+  - Thinking about security every day has made me a sharper developer and
+    code reviewer.
   highlights-fr:
-  - Recherche active de vulnérabilités dans les applications web et les API REST en appliquant
-    les méthodologies OWASP, les tests manuels et des outils personnalisés.
-  - Identification et divulgation responsable de plusieurs vulnérabilités réelles, avec
-    rédaction de rapports reproductibles permettant une remédiation rapide.
-  - Développement d'une approche de revue de code axée sur la sécurité qui améliore directement
-    la résilience des systèmes développés au quotidien.
-
-- name: SSM Innovation Centre
-  position: Intermediate Software Developer
-  position-fr: Développeur logiciel intermédiaire
-  startDate: 2023-06
-  endDate: Present
-  highlights:
-  - Lead day-to-day technical direction for the development team — driving architectural
-    decisions, code quality standards, and on-time delivery across active projects.
-  - Mentor junior and intermediate developers through code reviews, pair programming and
-    technical coaching, measurably improving team throughput and confidence.
-  - Diagnose and resolve performance bottlenecks and defects across a C# / .NET codebase,
-    consistently reducing time-to-resolution and improving system reliability.
-  - Own project planning and milestone estimation in close collaboration with project managers,
-    keeping stakeholders aligned and delivery predictable.
-  - Champion long-term maintainability in every architectural decision — evaluating trade-offs
-    between scalability, performance and team velocity.
-  highlights-fr:
-  - Pilotage de la direction technique quotidienne de l'équipe — décisions architecturales,
-    standards de qualité du code et livraisons dans les délais sur les projets actifs.
-  - Mentorat des développeurs juniors et intermédiaires via des revues de code, du pair
-    programming et du coaching technique, améliorant sensiblement la productivité de l'équipe.
-  - Diagnostic et résolution de problèmes de performance dans une base de code C# / .NET,
-    réduisant les délais de résolution et améliorant la fiabilité du système.
-  - Planification de projets et estimation des jalons en collaboration avec les gestionnaires,
-    assurant l'alignement des parties prenantes et la prévisibilité des livraisons.
-  - Défense de la maintenabilité à long terme dans chaque décision architecturale — évaluation
-    des compromis entre évolutivité, performance et vélocité d'équipe.
+  - Recherche de vulnérabilités dans les applications web et les API REST via
+    les méthodes OWASP, les tests manuels et des outils personnalisés.
+  - Trouvé et rapporté plusieurs vulnérabilités réelles avec des write-ups
+    clairs et reproductibles pour aider les équipes à les corriger rapidement.
+  - Penser à la sécurité au quotidien a fait de moi un développeur et un
+    relecteur de code plus rigoureux.
 
 - name: Freelance
   position: Web Developer & SEO Consultant
@@ -112,23 +82,47 @@ work:
   startDate: 2023-01
   endDate: Present
   highlights:
-  - Design, build and optimize websites for marketing professionals and small businesses
-    in Mexico and Latin America, focusing on performance, UX and conversion.
-  - Apply SEO best practices including on-page optimization, structured data (Schema.org),
-    Core Web Vitals tuning and keyword strategy to measurably grow organic traffic.
-  - Integrate agentic AI and automation workflows (content pipelines, lead capture,
-    analytics dashboards) to amplify marketing outcomes with minimal overhead.
-  - Advise clients on Google Analytics 4 and Search Console setup, building data-driven
-    marketing habits and tracking what actually moves the needle.
+  - Build and optimize websites for marketing professionals and small businesses
+    in Mexico and Latin America.
+  - Handle SEO including on-page optimization, structured data, Core Web Vitals
+    and keyword strategy.
+  - Set up AI-powered automations like content pipelines, lead capture and
+    analytics dashboards to help clients do more.
+  - Help clients set up Google Analytics 4 and Search Console so they can see
+    what's actually working.
   highlights-fr:
-  - Conception, développement et optimisation de sites web pour des professionnels du marketing
-    et des PME au Mexique et en Amérique latine, avec focus sur la performance et la conversion.
-  - Application des meilleures pratiques SEO — optimisation on-page, données structurées
-    (Schema.org), Core Web Vitals et stratégie de mots-clés — pour augmenter le trafic organique.
-  - Intégration de l'IA agentique et de flux automatisés (pipelines de contenu, capture de leads,
-    tableaux de bord analytiques) pour amplifier les résultats marketing.
-  - Accompagnement des clients dans la configuration de Google Analytics 4 et Search Console,
-    les aidant à adopter des habitudes marketing basées sur les données.
+  - Conception et optimisation de sites web pour des professionnels du marketing
+    et des PME au Mexique et en Amérique latine.
+  - Gestion du SEO, incluant l'optimisation on-page, les données structurées, Core Web Vitals
+    et la stratégie de mots-clés.
+  - Mise en place d'automations alimentées par l'IA comme des pipelines de
+    contenu, la capture de leads et des tableaux de bord analytiques.
+  - Aide les clients à configurer Google Analytics 4 et Search Console pour
+    savoir ce qui fonctionne vraiment.
+
+- name: SSM Innovation Centre
+  position: Intermediate Software Developer
+  position-fr: Développeur logiciel intermédiaire
+  startDate: 2023-06
+  endDate: 2026-06
+  highlights:
+  - Lead technical direction for the dev team, covering architecture decisions,
+    code quality and delivery timelines.
+  - Mentor junior and intermediate developers through code reviews, pair
+    programming and one-on-ones.
+  - Track down and fix performance issues and bugs across our C# / .NET codebase.
+  - Work closely with project managers on planning and milestone estimates.
+  - Always keep long-term maintainability in mind when making architecture calls.
+  highlights-fr:
+  - Pilotage de la direction technique de l'équipe, des décisions d'architecture,
+    de la qualité du code et des délais de livraison.
+  - Accompagnement des développeurs juniors et intermédiaires via des revues de
+    code, du pair programming et des rencontres individuelles.
+  - Identification et correction des problèmes de performance et des bugs dans
+    notre base de code C# / .NET.
+  - Collaboration étroite avec les gestionnaires de projets pour la planification
+    et les estimations de jalons.
+  - Maintenabilité à long terme toujours en tête lors des décisions d'architecture.
 
 - name: Sault College
   position: Web Applications & Business Applications Instructor
@@ -136,19 +130,19 @@ work:
   startDate: 2023-09
   endDate: 2024-06
   highlights:
-  - Designed and delivered curriculum for Web Applications and Business Applications
-    Development courses covering modern frameworks and real-world workflows.
-  - Maintained strong course completion rates through inclusive, adaptive teaching strategies
-    that met diverse learning styles and backgrounds.
-  - Incorporated current industry tools and trends into course material through ongoing
-    professional development, keeping content practical and up to date.
+  - Designed and taught Web Applications and Business Applications Development
+    courses.
+  - Kept strong completion rates by adapting to different learning styles
+    and backgrounds.
+  - Regularly updated course content to keep it current with industry tools
+    and practices.
   highlights-fr:
-  - Conception et livraison de curriculum pour les cours de développement d'applications web
-    et d'affaires, couvrant les frameworks modernes et les workflows réels.
-  - Maintien de forts taux de complétion grâce à des stratégies pédagogiques inclusives et
-    adaptatives répondant aux différents styles d'apprentissage.
-  - Intégration des tendances et outils actuels de l'industrie dans les cours via un
-    développement professionnel continu, maintenant le contenu pratique et à jour.
+  - Conception et enseignement des cours de développement d'applications web
+    et d'affaires.
+  - Maintien de bons taux de complétion en adaptant l'enseignement aux
+    différents styles d'apprentissage.
+  - Mise à jour régulière du contenu des cours pour rester en phase avec les
+    outils et pratiques actuels.
 
 - name: SSM Innovation Centre
   position: Jr Programmer
@@ -156,19 +150,19 @@ work:
   startDate: 2022-01
   endDate: 2023-06
   highlights:
-  - Accelerated ramp-up on a complex C# / .NET codebase, contributing meaningful features
-    and bug fixes within the first weeks on the project.
-  - Independently diagnosed and resolved complex technical problems, demonstrating strong
-    command of algorithms, data structures and debugging methodology.
-  - Collaborated effectively in an Agile team — participating in sprints, standups and
-    retrospectives while maintaining consistently high code quality.
+  - Got up to speed quickly on a complex C# / .NET codebase and was contributing
+    features and fixes within the first few weeks.
+  - Solved complex technical problems independently, drawing on solid knowledge
+    of algorithms, data structures and debugging.
+  - Worked well in an Agile team, joining sprints, standups and retros while
+    keeping code quality high.
   highlights-fr:
-  - Prise en main rapide d'une base de code C# / .NET complexe, avec contributions
-    significatives aux fonctionnalités et corrections dans les premières semaines du projet.
-  - Diagnostic et résolution autonomes de problèmes techniques complexes, démontrant une
-    solide maîtrise des algorithmes, structures de données et techniques de débogage.
-  - Collaboration efficace au sein d'une équipe Agile — participation aux sprints, standups
-    et rétrospectives avec un niveau de qualité de code constamment élevé.
+  - Prise en main rapide d'une base de code C# / .NET complexe, avec des
+    contributions aux fonctionnalités et corrections dès les premières semaines.
+  - Résolution autonome de problèmes techniques complexes grâce à une bonne
+    maîtrise des algorithmes, structures de données et débogage.
+  - Bonne collaboration en équipe Agile, avec participation aux sprints,
+    standups et rétrospectives en maintenant une haute qualité de code.
 
 - name: Sault College
   position: Computer Programming Tutor
@@ -176,19 +170,18 @@ work:
   startDate: 2021-09
   endDate: 2022-04
   highlights:
-  - Provided targeted one-on-one and small-group tutoring for Computer Programming students,
-    helping learners close knowledge gaps and improve their grades.
-  - Diagnosed individual learning needs and adapted support strategies accordingly,
-    resulting in measurable improvements in comprehension and exam performance.
-  - Built trusted relationships with both students and faculty, acting as a bridge that
-    kept at-risk students engaged and on track.
+  - Tutored Computer Programming students one-on-one and in small groups,
+    helping them fill knowledge gaps and improve their grades.
+  - Figured out where each student was struggling and adjusted how I helped them.
+  - Built good relationships with students and faculty, and helped keep
+    at-risk students engaged and on track.
   highlights-fr:
-  - Tutorat ciblé individuel et en petits groupes pour les étudiants en programmation,
-    aidant à combler les lacunes et améliorer les résultats scolaires.
-  - Identification des besoins d'apprentissage individuels et adaptation des stratégies
-    de soutien, résultant en des améliorations mesurables en compréhension.
-  - Établissement de relations de confiance avec les étudiants et le corps professoral,
-    maintenant l'engagement des étudiants à risque jusqu'à la réussite de leur programme.
+  - Tutorat individuel et en petits groupes pour les étudiants en programmation,
+    pour combler les lacunes et améliorer les résultats scolaires.
+  - Identification des difficultés de chaque étudiant et adaptation de
+    l'aide apportée.
+  - Bonnes relations établies avec les étudiants et le corps professoral,
+    avec un suivi des étudiants à risque.
   extra_space: true
 
 - name: SSM Innovation Centre
@@ -197,19 +190,16 @@ work:
   startDate: 2021-04
   endDate: 2021-09
   highlights:
-  - Delivered production-quality features in C# and Angular, exceeding typical expectations
-    for an entry-level co-op placement.
-  - Contributed to code reviews and QA processes from day one, demonstrating initiative
-    and professional maturity early in career.
-  - Applied coding standards and best practices consistently, producing maintainable code
-    that required minimal rework post-review.
+  - Built production-ready features in C# and Angular from early on
+    in the placement.
+  - Jumped into code reviews and QA processes from day one.
+  - Wrote clean, maintainable code that rarely needed changes after review.
   highlights-fr:
-  - Livraison de fonctionnalités de qualité production en C# et Angular, dépassant les
-    attentes habituelles pour un stage de premier échelon.
-  - Contribution aux revues de code et aux processus d'AQ dès le premier jour, démontrant
-    initiative et maturité professionnelle en début de carrière.
-  - Application cohérente des standards de codage et bonnes pratiques, produisant un code
-    maintenable nécessitant peu de révision après les revues.
+  - Développement de fonctionnalités prêtes pour la production en C# et
+    Angular dès le début du stage.
+  - Participation aux revues de code et aux processus d'AQ dès le premier jour.
+  - Code propre et maintenable qui nécessitait rarement des modifications
+    après les revues.
 
 skills:
 - name: Backend
@@ -234,9 +224,7 @@ skills:
 - name: Marketing & SEO
   keywords:
   - SEO
-  - Core Web Vitals
   - Google Analytics
-  - Schema.org
 - name: Databases
   keywords:
   - MSSQL
@@ -258,48 +246,45 @@ skills:
   - Burp Suite
 
 achievements:
-  - text: Active bug bounty researcher on Bugcrowd — identified and responsibly disclosed
-      real-world security vulnerabilities in REST APIs and web applications
-    text-fr: Chercheur en sécurité actif sur Bugcrowd — identification et divulgation responsable
-      de vulnérabilités réelles dans des API REST et des applications web
+  - text: Active bug bounty researcher on Bugcrowd, finding and reporting real-world
+      security vulnerabilities in REST APIs and web apps.
+    text-fr: Chercheur en sécurité actif sur Bugcrowd, identification et divulgation
+      responsable de vulnérabilités réelles dans des API REST et des applications web.
     source: 'https://bugcrowd.com'
-  - text: Technical lead at SSM Innovation Centre — driving architectural decisions, code
-      quality and developer growth across C# / .NET projects
-    text-fr: Lead technique chez SSM Innovation Centre --- pilotage des décisions architecturales,
-      qualité du code et croissance des développeurs dans des projets C# / .NET
-  - text: Freelance web developer and SEO consultant for marketing clients in Mexico —
-      delivering measurable improvements in organic visibility and digital presence
-    text-fr: Développeur web et consultant SEO freelance pour des clients au Mexique ---
-      améliorations mesurables en visibilité organique et présence numérique
-  - text: Building with agentic AI — designing LLM-powered automation workflows that
-      reduce manual overhead for businesses and marketing teams
-    text-fr: Construction avec l'IA agentique --- conception de flux de travail automatisés
-      alimentés par des LLM pour réduire la charge manuelle des équipes
-  - text: Former instructor at Sault College — designed and delivered Web Applications
-      and Business Applications Development curriculum
-    text-fr: Ancien instructeur au Collège Sault --- conception et livraison de curriculum
-      en développement d'applications web et d'affaires
-  - text: Graduated with a 3.8 GPA from Sault College Computer Programming Diploma
-    text-fr: Diplômé avec une moyenne de 3,8 du programme en programmation informatique du Collège Sault
-  - text: Fluent in four languages — English, French, Portuguese and Spanish — enabling
-      seamless collaboration across North American and Latin American markets
-    text-fr: Maîtrise de quatre langues --- anglais, français, portugais et espagnol ---
-      pour une collaboration fluide en Amérique du Nord et en Amérique latine
+  - text: Technical lead at SSM Innovation Centre, handling architecture decisions,
+      code quality and developer growth on C# / .NET projects.
+    text-fr: Lead technique chez SSM Innovation Centre, pilotage des décisions
+      architecturales, de la qualité du code et de la croissance des développeurs
+      sur des projets C# / .NET.
+  - text: Freelance web developer and SEO consultant for clients in Mexico, helping
+      them grow their organic visibility and digital presence.
+    text-fr: Développeur web et consultant SEO freelance pour des clients au Mexique,
+      les aidant à améliorer leur visibilité organique et leur présence numérique.
+  - text: Building agentic AI workflows that help businesses and marketing teams
+      automate the repetitive stuff.
+    text-fr: Construction de workflows d'IA agentique pour aider les entreprises et
+      les équipes marketing à automatiser les tâches répétitives.
+  - text: Former instructor at Sault College, where I designed and taught Web
+      Applications and Business Applications Development courses.
+    text-fr: Ancien instructeur au Collège Sault, où j'ai conçu et enseigné les cours
+      de développement d'applications web et d'affaires.
+  - text: Graduated with a 3.8 GPA from Sault College Computer Programming Diploma.
+    text-fr: Diplômé avec une moyenne de 3,8 du programme en programmation informatique du Collège Sault.
+  - text: Fluent in English, French, Portuguese and Spanish.
+    text-fr: Maîtrise de l'anglais, du français, du portugais et de l'espagnol.
 
 awards:
 - title: ADnet Award in Memory of Wilfred Lefresne (2022)
-  summary: Awarded by Sault College for academic excellence in Computer Programming
-  summary-fr: Décerné par le Collège Sault pour l'excellence académique en programmation informatique
+  summary: Awarded by ADnet (Algoma District Community Network) to Information Technology students demonstrating volunteerism, leadership, and innovation.
+  summary-fr: Décerné par ADnet (Algoma District Community Network) aux étudiants en technologies de l'information faisant preuve de bénévolat, de leadership et d'innovation.
   source: ''
 - title: President's Academic Excellence Scholarship (2021)
-  summary: Awarded by Sault College for outstanding academic performance
-  summary-fr: Décerné par le Collège Sault pour des performances académiques exceptionnelles
+  summary: Awarded by Sault College for outstanding academic performance.
+  summary-fr: Décerné par le Collège Sault pour des performances académiques exceptionnelles.
   source: ''
 - title: ADnet Award in Memory of Wilfred Lefresne (2021)
-  summary: Awarded by Sault College for academic excellence in Computer Programming
-  summary-fr: Décerné par le Collège Sault pour l'excellence académique en programmation informatique
+  summary: Awarded by ADnet (Algoma District Community Network) to Information Technology students demonstrating volunteerism, leadership, and innovation.
+  summary-fr: Décerné par ADnet (Algoma District Community Network) aux étudiants en technologies de l'information faisant preuve de bénévolat, de leadership et d'innovation.
   source: ''
 
 projects: []
-
-
