@@ -2,31 +2,31 @@
   --header-height: 4rem;
   --sidebar-width: 18rem;
 
-  /* Forest green — Roberto's personal brand (#1E8955 lifted for dark-bg contrast) */
-  --primary: #22a866;
-  --primary-darker: #1a7d4e;
-  --primary-transparent: rgba(34, 168, 102, 0.1);
-  --primary-glow: 0 2px 16px rgba(34, 168, 102, 0.2);
+  /* Electric blue — Roberto's personal brand */
+  --primary: #1A43BF;
+  --primary-darker: #1337A0;
+  --primary-transparent: rgba(26, 67, 191, 0.1);
+  --primary-glow: 0 2px 16px rgba(26, 67, 191, 0.2);
 
-  /* Muted teal-green — secondary / supporting elements */
-  --secondary: #5a9e7e;
-  --secondary-darker: #397b53;
-  --secondary-transparent: rgba(90, 158, 126, 0.08);
-  --secondary-glow: 0 2px 10px rgba(90, 158, 126, 0.15);
+  /* Muted steel blue — secondary / supporting elements */
+  --secondary: #4A72C4;
+  --secondary-darker: #2A4A9B;
+  --secondary-transparent: rgba(74, 114, 196, 0.08);
+  --secondary-glow: 0 2px 10px rgba(74, 114, 196, 0.15);
 
-  /* Backgrounds — deep dark with warm green undertone */
-  --background: #0b0f0c;
-  --background-card: #111912;
-  --background-sidebar: #080c09;
+  /* Backgrounds — deep dark with cool blue undertone */
+  --background: #0a0c10;
+  --background-card: #11131a;
+  --background-sidebar: #08090e;
 
-  /* Text — warm light gray, not clinical white */
-  --text-color: #cdd8d1;
-  --text-color-dim: #6b8275;
-  --text-color-bright: #e8f0eb;
+  /* Text — cool light gray, not clinical white */
+  --text-color: #cdd1d8;
+  --text-color-dim: #6b7582;
+  --text-color-bright: #e8ebf0;
 
   /* UI */
   --button-radius: 4px;
-  --border-color: rgba(34, 168, 102, 0.18);
+  --border-color: rgba(26, 67, 191, 0.18);
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--border-color);
 
   --font-family: 'Fira Mono', 'Courier New', 'Consolas', monospace;

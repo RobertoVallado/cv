@@ -1,7 +1,7 @@
 basics:
   name: Roberto Vallado
-  headline: Full-Stack Developer · Security Researcher · SEO Consultant
-  headline-fr: Développeur Full-Stack · Chercheur en Sécurité · Consultant SEO
+  headline: Security-Focused Developer · Full-Stack · Bug Bounty Researcher
+  headline-fr: Développeur Orienté Sécurité · Full-Stack · Chercheur Bug Bounty
   email: contact@robertovallado.dev
   url: https://github.com/RobertoVallado
   linkedin: https://www.linkedin.com/in/roberto-vallado/
@@ -9,23 +9,29 @@ basics:
     address: Québec, QC, Canada
 
 personal-statement: |
-  Full-stack developer with over five years of hands-on experience in C# / .NET and
-  Angular, most recently as technical lead on a software development team. Drove
-  architecture decisions, code quality standards and on-time delivery across multiple
-  active projects while mentoring a team of four. Security is woven into how I work:
-  active bug bounty research on Bugcrowd shapes how I design systems and review code
-  every day. Former instructor, clear communicator, strong mentor. Fluent in English,
-  French, Portuguese and Spanish.
+  Security-focused full-stack developer with over five years of production experience
+  in C# / .NET and Angular. I believe developers are the most effective line of defence
+  against a broken internet. That is why I actively hunt real-world vulnerabilities
+  on Bugcrowd, built an SBOM pipeline to proactively catch vulnerable dependencies, and
+  am currently working towards CompTIA Network+ to sharpen my understanding of the
+  infrastructure layer that underpins secure software. Most recently technical lead:
+  drove architecture decisions, mentored four developers, and filled QA and DevOps gaps
+  in a lean team with no dedicated specialists, gaining hands-on breadth across the
+  full delivery stack. Former instructor, clear communicator, strong mentor. Fluent in
+  English, French, Portuguese and Spanish.
 
 personal-statement-fr: |
-  Développeur full-stack avec plus de cinq ans d'expérience en C# / .NET et Angular,
-  récemment en tant que lead technique au sein d'une équipe de développement. Pilotage
-  des décisions d'architecture, des standards de qualité du code et des livraisons dans
-  les délais sur plusieurs projets actifs, tout en encadrant une équipe de quatre
-  développeurs. La sécurité fait partie de ma façon de travailler: mes recherches en
-  bug bounty sur Bugcrowd façonnent ma conception de systèmes et mes revues de code au
-  quotidien. Ancien instructeur, communicateur clair, mentor accompli. Maîtrise de
-  l'anglais, du français, du portugais et de l'espagnol.
+  Développeur full-stack orienté sécurité, avec plus de cinq ans d'expérience en
+  production en C# / .NET et Angular. Je crois que les développeurs sont la ligne de
+  défense la plus efficace contre un internet vulnérable. C'est pourquoi je chasse
+  activement des vulnérabilités réelles sur Bugcrowd, j'ai mis en place un pipeline
+  SBOM pour identifier proactivement les dépendances à risque, et je prépare
+  actuellement la certification CompTIA Network+ pour renforcer ma compréhension de la
+  couche réseau qui sous-tend tout logiciel sécurisé. Plus récemment lead technique :
+  décisions d'architecture, mentorat de quatre développeurs, et prise en charge des
+  rôles QA et DevOps dans une équipe légère sans spécialistes dédiés. Ancien
+  instructeur, communicateur clair, mentor accompli. Maîtrise de l'anglais, du
+  français, du portugais et de l'espagnol.
 
 extra-links:
   work_history:
@@ -36,6 +42,13 @@ extra-links:
     link: https://github.com/RobertoVallado
 
 education:
+- institution: CompTIA
+  area: Network+
+  studyType: Certification
+  startDate: ''
+  endDate: ''
+  score: 'In Progress'
+
 - institution: Cégep Limoilou
   area: Développement d'applications sécuritaires
   studyType: AEC
@@ -107,6 +120,12 @@ work:
     pair programming and one-on-ones.
   - Reduced xUnit integration test run times by 20% in CI/CD pipelines, shortening
     feedback loops and improving throughput for the whole team.
+  - Built and owned an SBOM pipeline to continuously audit all third-party library
+    dependencies, surfacing vulnerable packages before they reached production and
+    reducing supply-chain risk across our projects.
+  - Filled QA and DevOps gaps in a lean team with no dedicated specialists, taking
+    ownership of test strategy, CI/CD configuration and deployment pipelines alongside
+    regular feature delivery, gaining hands-on breadth across the full stack.
   highlights-fr:
   - Pilotage de la direction technique de l'équipe, avec responsabilité sur les
     décisions d'architecture, les standards de qualité et les livraisons sur plusieurs
@@ -115,10 +134,16 @@ work:
     via des revues de code, du pair programming et des rencontres individuelles.
   - Réduction de 20% du temps d'exécution des tests d'intégration xUnit dans les
     pipelines CI/CD, améliorant la cadence et le feedback de toute l'équipe.
+  - Mise en place et gestion d'un pipeline SBOM pour auditer en continu toutes les
+    dépendances tierces, identifiant les paquets vulnérables avant leur mise en
+    production et réduisant les risques liés à la chaîne d'approvisionnement.
+  - Prise en charge des rôles QA et DevOps dans une équipe légère sans spécialistes
+    dédiés, avec responsabilité de la stratégie de tests, de la configuration CI/CD
+    et des déploiements en parallèle du développement de fonctionnalités.
 
 - name: Sault College
   position: Web Applications & Business Applications Instructor
-  position-fr: Instructeur — Applications Web & Applications d'affaires
+  position-fr: Instructeur, Applications Web & Applications d'affaires
   startDate: 2023-09
   endDate: 2024-06
   highlights:
@@ -230,10 +255,21 @@ skills:
   keywords:
   - Bug Bounty
   - Vulnerability Research
+  - Penetration Testing
   - OWASP
   - Burp Suite
+  - SBOM
+  - Network+ (in progress)
 
 achievements:
+  - text: Designed and implemented an SBOM pipeline at SSM Innovation Centre to
+      proactively identify and remediate vulnerable third-party libraries, embedding
+      supply-chain security into the team's delivery process before it became
+      an industry mandate.
+    text-fr: Conception et mise en œuvre d'un pipeline SBOM au SSM Innovation Centre
+      pour identifier et corriger proactivement les bibliothèques tierces vulnérables,
+      intégrant la sécurité de la chaîne d'approvisionnement dans le processus de
+      livraison de l'équipe.
   - text: Active bug bounty researcher on Bugcrowd, finding and reporting real-world
       security vulnerabilities in REST APIs and web apps.
     text-fr: Chercheur en sécurité actif sur Bugcrowd, identification et divulgation

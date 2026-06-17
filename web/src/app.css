@@ -43,8 +43,8 @@ h2 {
 pre {
   font-size: 14px;
   font-family: var(--font-mono);
-  background-color: rgba(34, 168, 102, 0.05);
-  border: 1px solid rgba(34, 168, 102, 0.18);
+  background-color: rgba(26, 67, 191, 0.05);
+  border: 1px solid rgba(26, 67, 191, 0.18);
   border-radius: 4px;
   padding: 0.5em;
   overflow-x: auto;
@@ -77,11 +77,11 @@ button:focus:not(:focus-visible) {
 }
 
 ::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: #080c09; }
-::-webkit-scrollbar-thumb { background: rgba(34, 168, 102, 0.25); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(34, 168, 102, 0.5); }
+::-webkit-scrollbar-track { background: #08090e; }
+::-webkit-scrollbar-thumb { background: rgba(26, 67, 191, 0.25); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(26, 67, 191, 0.5); }
 
 ::selection {
-  background: rgba(34, 168, 102, 0.2);
-  color: #e8f0eb;
+  background: rgba(26, 67, 191, 0.2);
+  color: #e8ebf0;
 }

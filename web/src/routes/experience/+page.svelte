@@ -85,7 +85,7 @@
   .dates { font-size: 0.78rem; opacity: 0.6; white-space: nowrap; }
   .badge-current {
     font-size: 0.65rem; font-weight: 600; letter-spacing: 0.05em;
-    text-transform: uppercase; background: var(--primary); color: #0b0f0c;
+    text-transform: uppercase; background: var(--primary); color: #0a0c10;
     padding: 0.1rem 0.45rem; border-radius: 99px;
   }
   .highlights {

@@ -61,8 +61,8 @@
     : data.basics.headline;
 
   $: socials = [
-    { name: 'GitHub',   url: data.basics.url,     icon: 'fa-github',   color: '#22a866' },
-    { name: 'LinkedIn', url: data.basics.linkedin, icon: 'fa-linkedin', color: '#5a9e7e' },
+    { name: 'GitHub',   url: data.basics.url,     icon: 'fa-github',   color: '#1A43BF' },
+    { name: 'LinkedIn', url: data.basics.linkedin, icon: 'fa-linkedin', color: '#4A72C4' },
   ].filter(s => s.url);
 
   $: headerLinks = socials.map(({ name, url }) => ({ name, url }));

@@ -14,13 +14,13 @@
     "page_title": "Roberto Vallado | Full-Stack Developer & Security Researcher | Intro",
     "h1": "Intro",
     "greeting": "Hola, I'm Roberto",
-    "tagline": "Full-stack developer with a security mindset, an eye for growth, and a genuine curiosity for what AI can unlock next.",
-    "p0": "I'm Roberto — a full-stack software developer based in Québec, with over five years of professional experience building production applications in C# / .NET and Angular. I care deeply about writing code that is not just functional, but secure, maintainable, and built to last. That's not a slogan — it comes from actively hunting security vulnerabilities as a freelance researcher on Bugcrowd, where I've identified and disclosed real-world flaws in REST APIs and web systems. That work changed how I think about every line of code I write.",
-    "p1": "On the AI frontier, I'm actively building with agentic AI — designing and integrating LLM-powered workflows that automate repetitive tasks, surface insights, and help businesses move faster without burning out their teams. I believe the most impactful AI work right now happens at the intersection of solid engineering and practical business problems, and that's exactly where I want to be.",
-    "p2": "I also do freelance web development and SEO consulting for marketing professionals and small businesses in Mexico and Latin America. I help clients build fast, well-structured websites, get found on Google through on-page SEO, structured data and Core Web Vitals optimization, and set up analytics that actually tell them what's working. Being multilingual — English, French, Portuguese and Spanish — means I can work directly with clients across the Americas without losing anything in translation.",
+    "tagline": "Security-focused developer who wants to make the internet a harder place to break, one bug at a time.",
+    "p0": "I'm Roberto, a full-stack developer and security enthusiast based in Québec. My goal is simple: build better, safer software and help make the internet a less broken place. Over five years of building production applications in C# / .NET and Angular gave me the craft of shipping reliable code. But it was actively hunting real-world security vulnerabilities on Bugcrowd that changed how I see every system I touch. I genuinely love finding bugs: figuring out how and why they exist, writing clear reproducible reports, and watching teams fix them. I think about attack surfaces the way most developers think about features.",
+    "p1": "On the AI frontier, I'm actively building with agentic AI, designing and integrating LLM-powered workflows that automate repetitive tasks, surface insights, and help businesses move faster without burning out their teams. I believe the most impactful AI work right now happens at the intersection of solid engineering and practical business problems, and that's exactly where I want to be.",
+    "p2": "I also do freelance web development and SEO consulting for marketing professionals and small businesses in Mexico and Latin America. I help clients build fast, well-structured websites, get found on Google through on-page SEO, structured data and Core Web Vitals optimization, and set up analytics that actually tell them what's working. Being multilingual (English, French, Portuguese and Spanish) means I can work directly with clients across the Americas without losing anything in translation.",
     "p3": "In my day job at SSM Innovation Centre, I've grown from a co-op developer into a team lead, taking on mentorship, architectural decisions, and project planning responsibilities alongside the hands-on coding. I've also taught Web Applications and Business Applications Development at Sault College, which sharpened my ability to explain complex things clearly and meet people where they are.",
-    "p4": "I'm currently completing an AEC in Secure Application Development at Cégep Limoilou, deepening my formal security knowledge to complement the practical skills I've built through research and real-world projects. The goal: become the kind of developer who can build great things AND make sure nobody can break them.",
-    "p5": "If you're building something meaningful — whether that's a product, a platform, or a growth strategy — I'd love to be part of it. I'm always open to the right opportunity, freelance engagement, or just a good conversation about tech, AI, or digital marketing."
+    "p4": "I'm currently completing an AEC in Secure Application Development at Cégep Limoilou, and working towards CompTIA Network+, not to become a network engineer, but because understanding the networking and infrastructure layer makes me a sharper developer and a better security researcher. Knowing how packets move, how DNS resolves, how TLS handshakes work: that context closes the gap between writing code and understanding what can go wrong underneath it. The goal has always been the same: build things that are hard to break, and help fix the internet along the way.",
+    "p5": "If you're building something meaningful (whether that's a product, a platform, or a growth strategy), I'd love to be part of it. I'm always open to the right opportunity, freelance engagement, or just a good conversation about tech, AI, or digital marketing."
   },
   "experience": {
     "page_title": "Roberto Vallado | CV | Experience",
@@ -36,12 +36,12 @@
     "note": "References are available upon request and can speak to both technical ability and team collaboration. For a full view of my work, visit my",
     "github": "GitHub profile",
     "soft": [
-      { "skill": "Security-first mindset", "desc": "Bug bounty background means I think about edge cases, trust boundaries and resilience — not just feature delivery." },
+      { "skill": "Security-first mindset", "desc": "Bug bounty background means I think about edge cases, trust boundaries and resilience, not just feature delivery." },
       { "skill": "Technical mentorship", "desc": "Hands-on experience guiding junior developers at SSM Innovation Centre, helping them resolve challenges and grow their skills." },
       { "skill": "Clear communication", "desc": "Comfortable communicating technical decisions to both developers and non-technical stakeholders, in four languages." },
       { "skill": "Agile & collaborative", "desc": "Experienced working within Agile teams, participating in sprint planning, code reviews and knowledge-transfer sessions." },
       { "skill": "Problem solving", "desc": "Track record of autonomously analyzing and resolving complex technical issues across the full stack." },
-      { "skill": "Adaptability", "desc": "Quick to pick up new tools and environments — from teaching web applications to researching security vulnerabilities." }
+      { "skill": "Adaptability", "desc": "Quick to pick up new tools and environments, from teaching web applications to researching security vulnerabilities." }
     ]
   },
   "achievements": {
@@ -54,13 +54,13 @@
     "or": "or",
     "contact": "get in touch",
     "stats": [
-      { "stat": "Active bug bounty researcher on Bugcrowd — identified and responsibly disclosed real-world vulnerabilities in REST APIs and web applications", "source": "https://bugcrowd.com" },
-      { "stat": "Technical lead at SSM Innovation Centre — driving architectural decisions, code quality and developer growth across C# / .NET projects", "source": "" },
-      { "stat": "Freelance web developer & SEO consultant for marketing clients in Mexico — delivering measurable growth in organic search visibility and digital presence", "source": "" },
-      { "stat": "Building with agentic AI — designing LLM-powered automation workflows that reduce manual overhead for businesses and marketing teams", "source": "" },
-      { "stat": "Former instructor at Sault College — designed and delivered Web Applications and Business Applications Development curriculum", "source": "" },
-      { "stat": "Computer Programming diploma graduate — 3.8 GPA, with two academic excellence awards from Sault College", "source": "" },
-      { "stat": "Fluent in four languages — English, French, Portuguese and Spanish — enabling seamless collaboration across North American and Latin American markets", "source": "" },
+      { "stat": "Active bug bounty researcher on Bugcrowd: identified and responsibly disclosed real-world vulnerabilities in REST APIs and web applications", "source": "https://bugcrowd.com" },
+      { "stat": "Technical lead at SSM Innovation Centre: driving architectural decisions, code quality and developer growth across C# / .NET projects", "source": "" },
+      { "stat": "Freelance web developer & SEO consultant for marketing clients in Mexico, delivering measurable growth in organic search visibility and digital presence", "source": "" },
+      { "stat": "Building with agentic AI: designing LLM-powered automation workflows that reduce manual overhead for businesses and marketing teams", "source": "" },
+      { "stat": "Former instructor at Sault College: designed and delivered Web Applications and Business Applications Development curriculum", "source": "" },
+      { "stat": "Computer Programming diploma graduate, 3.8 GPA, with two academic excellence awards from Sault College", "source": "" },
+      { "stat": "Fluent in four languages (English, French, Portuguese and Spanish), enabling seamless collaboration across North American and Latin American markets", "source": "" },
       { "stat": "Currently completing an AEC in Secure Application Development at Cégep Limoilou (2026)", "source": "" }
     ],
     "awards_list": [
@@ -69,13 +69,20 @@
       { "award": "ADnet Award in Memory of Wilfred Lefresne (2021)", "issuer": "Sault College" }
     ]
   },
+  "home": {
+    "education": "Education",
+    "view_bio": "View Full Bio",
+    "view_experience": "View All Experience",
+    "view_skills": "View All Skills",
+    "view_achievements": "View All Achievements"
+  },
   "contact": {
     "page_title": "Roberto Vallado | CV | Contact",
     "h1": "Contact",
     "intro": "If you're looking for a developer who brings both strong engineering skills and a security-first mindset, I'd love to hear from you!",
     "email_label": "The best way to reach me is by email:",
     "reveal": "Reveal email address",
-    "thanks": "Thank you for stopping by — I hope to hear from you!",
+    "thanks": "Thank you for stopping by. I hope to hear from you!",
     "learn_more": "You can learn more about me on the",
     "intro_page": "intro",
     "browse": "page, or browse the",
@@ -95,7 +102,7 @@
   "ideal_role": {
     "page_title": "Roberto Vallado | CV | Ideal Role",
     "h1": "What I'm looking for",
-    "p0": "I'm looking for a role where I can contribute meaningfully — writing solid, maintainable code while applying a security-conscious perspective that helps the team build more resilient software.",
+    "p0": "I'm looking for a role where I can contribute meaningfully: writing solid, maintainable code while applying a security-conscious perspective that helps the team build more resilient software.",
     "p1": "I enjoy working in environments where quality matters, collaboration is the norm, and there's room to grow technically while also having a positive impact on the people around me.",
     "p2": "Mentoring junior developers and sharing knowledge are things I genuinely enjoy, not just responsibilities I take on out of obligation.",
     "values_title": "Values",
@@ -122,7 +129,7 @@
       { "lbl": "Contract Type", "desc": "Permanent, full-time" },
       { "lbl": "Seniority", "desc": "Intermediate to Senior Developer, ideally with team lead or technical ownership opportunities" },
       { "lbl": "Discipline", "desc": "Full-stack development, with a preference for .NET / C# backends and modern frontends (Angular, TypeScript)" },
-      { "lbl": "Industry", "desc": "Open to a variety of sectors — especially public services, civic tech, fintech or security-focused products" },
+      { "lbl": "Industry", "desc": "Open to a variety of sectors, especially public services, civic tech, fintech or security-focused products" },
       { "lbl": "Comp", "desc": "Competitive and commensurate with experience; flexible for the right opportunity" }
     ]
   }

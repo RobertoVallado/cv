@@ -14,13 +14,13 @@
     "page_title": "Roberto Vallado | Développeur Full-Stack & Chercheur en Sécurité | Intro",
     "h1": "Intro",
     "greeting": "Hola, je suis Roberto",
-    "tagline": "Développeur full-stack avec une mentalité sécurité, un œil pour la croissance et une vraie curiosité pour ce que l'IA peut débloquer.",
-    "p0": "Je suis Roberto — développeur full-stack basé à Québec, avec plus de cinq ans d'expérience professionnelle dans la création d'applications de production en C# / .NET et Angular. J'accorde une grande importance à écrire du code non seulement fonctionnel, mais sécurisé, maintenable et pérenne. Ce n'est pas un slogan — cela vient de mes recherches actives en vulnérabilités sur Bugcrowd, où j'ai identifié et divulgué des failles réelles dans des API REST et des systèmes web. Ce travail a changé ma façon d'aborder chaque ligne de code.",
-    "p1": "À la frontière de l'IA, je construis activement avec l'IA agentique — en concevant et intégrant des flux de travail alimentés par des LLM qui automatisent les tâches répétitives, font émerger des informations utiles et aident les entreprises à aller plus vite sans épuiser leurs équipes. Je crois que le travail en IA le plus impactant se situe à l'intersection d'une ingénierie solide et de problèmes commerciaux concrets — et c'est exactement là où je veux être.",
-    "p2": "Je fais également du développement web et du conseil en référencement (SEO) en freelance pour des professionnels du marketing et des PME au Mexique et en Amérique latine. J'aide mes clients à créer des sites rapides et bien structurés, à se positionner sur Google grâce au SEO on-page, aux données structurées et à l'optimisation des Core Web Vitals, et à mettre en place des outils d'analyse qui leur montrent vraiment ce qui fonctionne. Être multilingue — anglais, français, portugais et espagnol — me permet de travailler directement avec des clients partout dans les Amériques.",
+    "tagline": "Développeur orienté sécurité qui veut rendre l'internet plus difficile à compromettre, un bug à la fois.",
+    "p0": "Je suis Roberto, développeur full-stack et passionné de sécurité basé à Québec. Mon objectif est simple : construire des logiciels meilleurs et plus sûrs, et contribuer à rendre l'internet moins vulnérable. Plus de cinq ans à construire des applications en production en C# / .NET et Angular m'ont appris le métier. Mais c'est la chasse active aux vulnérabilités réelles sur Bugcrowd qui a changé ma façon de voir chaque système que je touche. Ce que j'aime vraiment faire : trouver des failles, comprendre comment et pourquoi elles existent, rédiger des rapports clairs et reproductibles, et voir les équipes les corriger. Je pense aux surfaces d'attaque comme la plupart des développeurs pensent aux fonctionnalités.",
+    "p1": "À la frontière de l'IA, je construis activement avec l'IA agentique, en concevant et intégrant des flux de travail alimentés par des LLM qui automatisent les tâches répétitives, font émerger des informations utiles et aident les entreprises à aller plus vite sans épuiser leurs équipes. Je crois que le travail en IA le plus impactant se situe à l'intersection d'une ingénierie solide et de problèmes commerciaux concrets, et c'est exactement là où je veux être.",
+    "p2": "Je fais également du développement web et du conseil en référencement (SEO) en freelance pour des professionnels du marketing et des PME au Mexique et en Amérique latine. J'aide mes clients à créer des sites rapides et bien structurés, à se positionner sur Google grâce au SEO on-page, aux données structurées et à l'optimisation des Core Web Vitals, et à mettre en place des outils d'analyse qui leur montrent vraiment ce qui fonctionne. Être multilingue (anglais, français, portugais et espagnol) me permet de travailler directement avec des clients partout dans les Amériques.",
     "p3": "Dans mon emploi principal chez SSM Innovation Centre, je suis passé de développeur en stage à chef d'équipe, en assumant des responsabilités de mentorat, de décisions architecturales et de planification de projets en plus du développement actif. J'ai également enseigné le développement d'applications web et d'affaires au Collège Sault, ce qui a affiné ma capacité à expliquer des sujets complexes clairement et à m'adapter au niveau de chaque interlocuteur.",
-    "p4": "Je termine actuellement un AEC en Développement d'applications sécuritaires au Cégep Limoilou, approfondissant mes connaissances formelles en sécurité pour compléter les compétences pratiques développées grâce à la recherche et aux projets concrets. L'objectif : devenir le type de développeur capable de créer de grandes choses ET de s'assurer que personne ne peut les compromettre.",
-    "p5": "Si vous construisez quelque chose de significatif — que ce soit un produit, une plateforme ou une stratégie de croissance — j'aimerais en faire partie. Je suis toujours ouvert à la bonne opportunité, à un mandat en freelance ou simplement à une bonne conversation sur la tech, l'IA ou le marketing numérique."
+    "p4": "Je termine actuellement un AEC en Développement d'applications sécuritaires au Cégep Limoilou, et je prépare la certification CompTIA Network+, non pas pour devenir ingénieur réseau, mais parce que comprendre la couche réseau et infrastructure me rend plus rigoureux en tant que développeur et chercheur en sécurité. Savoir comment les paquets circulent, comment DNS résout, comment le handshake TLS fonctionne : ce contexte comble l'écart entre écrire du code et comprendre ce qui peut mal tourner en dessous. L'objectif a toujours été le même : construire des choses difficiles à compromettre, et contribuer à réparer l'internet au passage.",
+    "p5": "Si vous construisez quelque chose de significatif (que ce soit un produit, une plateforme ou une stratégie de croissance), j'aimerais en faire partie. Je suis toujours ouvert à la bonne opportunité, à un mandat en freelance ou simplement à une bonne conversation sur la tech, l'IA ou le marketing numérique."
   },
   "experience": {
     "page_title": "Roberto Vallado | CV | Expérience",
@@ -36,12 +36,12 @@
     "note": "Des références sont disponibles sur demande pour attester autant des compétences techniques que de la collaboration en équipe. Pour un aperçu complet de mon travail, visitez mon",
     "github": "profil GitHub",
     "soft": [
-      { "skill": "Mentalité sécurité-first", "desc": "Mon expérience en bug bounty m'amène naturellement à penser aux cas limites, aux frontières de confiance et à la résilience — pas seulement à la livraison de fonctionnalités." },
+      { "skill": "Mentalité sécurité-first", "desc": "Mon expérience en bug bounty m'amène naturellement à penser aux cas limites, aux frontières de confiance et à la résilience, pas seulement à la livraison de fonctionnalités." },
       { "skill": "Mentorat technique", "desc": "Expérience concrète dans l'encadrement de développeurs juniors chez SSM Innovation Centre, en les aidant à résoudre des défis et à développer leurs compétences." },
       { "skill": "Communication claire", "desc": "À l'aise pour communiquer les décisions techniques autant aux développeurs qu'aux parties prenantes non techniques, et ce en quatre langues." },
-      { "skill": "Agile & collaboratif", "desc": "Expérience au sein d'équipes Agile — participation à la planification des sprints, aux revues de code et aux sessions de transfert de connaissances." },
+      { "skill": "Agile & collaboratif", "desc": "Expérience au sein d'équipes Agile, participation à la planification des sprints, aux revues de code et aux sessions de transfert de connaissances." },
       { "skill": "Résolution de problèmes", "desc": "Bilan d'analyse et de résolution autonomes de problèmes techniques complexes dans l'ensemble de la pile applicative." },
-      { "skill": "Adaptabilité", "desc": "Capacité à s'approprier rapidement de nouveaux outils et environnements — de l'enseignement d'applications web à la recherche de vulnérabilités de sécurité." }
+      { "skill": "Adaptabilité", "desc": "Capacité à s'approprier rapidement de nouveaux outils et environnements, de l'enseignement d'applications web à la recherche de vulnérabilités de sécurité." }
     ]
   },
   "achievements": {
@@ -54,13 +54,13 @@
     "or": "ou",
     "contact": "me contacter",
     "stats": [
-      { "stat": "Chercheur en sécurité actif sur Bugcrowd — identification et divulgation responsable de vulnérabilités réelles dans des API REST et des applications web", "source": "https://bugcrowd.com" },
-      { "stat": "Lead technique chez SSM Innovation Centre — pilotage des décisions architecturales, de la qualité du code et de la croissance des développeurs dans des projets C# / .NET", "source": "" },
-      { "stat": "Développeur web et consultant SEO freelance pour des clients au Mexique — améliorations mesurables en visibilité organique et présence numérique", "source": "" },
-      { "stat": "Construction avec l'IA agentique — conception de flux de travail automatisés alimentés par des LLM pour réduire la charge manuelle des équipes marketing", "source": "" },
-      { "stat": "Ancien instructeur au Collège Sault — conception et livraison de curriculum en développement d'applications web et d'affaires", "source": "" },
+      { "stat": "Chercheur en sécurité actif sur Bugcrowd : identification et divulgation responsable de vulnérabilités réelles dans des API REST et des applications web", "source": "https://bugcrowd.com" },
+      { "stat": "Lead technique chez SSM Innovation Centre : pilotage des décisions architecturales, de la qualité du code et de la croissance des développeurs dans des projets C# / .NET", "source": "" },
+      { "stat": "Développeur web et consultant SEO freelance pour des clients au Mexique, avec des améliorations mesurables en visibilité organique et présence numérique", "source": "" },
+      { "stat": "Construction avec l'IA agentique : conception de flux de travail automatisés alimentés par des LLM pour réduire la charge manuelle des équipes marketing", "source": "" },
+      { "stat": "Ancien instructeur au Collège Sault : conception et livraison de curriculum en développement d'applications web et d'affaires", "source": "" },
       { "stat": "Diplômé avec une moyenne de 3,8 du programme en programmation informatique du Collège Sault, avec deux prix d'excellence académique", "source": "" },
-      { "stat": "Maîtrise de quatre langues — anglais, français, portugais et espagnol — pour une collaboration fluide en Amérique du Nord et en Amérique latine", "source": "" },
+      { "stat": "Maîtrise de quatre langues (anglais, français, portugais et espagnol), pour une collaboration fluide en Amérique du Nord et en Amérique latine", "source": "" },
       { "stat": "AEC en Développement d'applications sécuritaires au Cégep Limoilou (2026)", "source": "" }
     ],
     "awards_list": [
@@ -69,13 +69,20 @@
       { "award": "Prix ADnet à la mémoire de Wilfred Lefresne (2021)", "issuer": "Collège Sault" }
     ]
   },
+  "home": {
+    "education": "Éducation",
+    "view_bio": "Voir la bio complète",
+    "view_experience": "Voir toute l'expérience",
+    "view_skills": "Voir toutes les compétences",
+    "view_achievements": "Voir toutes les réalisations"
+  },
   "contact": {
     "page_title": "Roberto Vallado | CV | Contact",
     "h1": "Contact",
     "intro": "Si vous cherchez un développeur qui allie de solides compétences en ingénierie et une approche sécurité-first, je serais ravi d'avoir de vos nouvelles !",
     "email_label": "La meilleure façon de me joindre est par courriel :",
     "reveal": "Afficher l'adresse courriel",
-    "thanks": "Merci de votre visite — j'espère avoir de vos nouvelles !",
+    "thanks": "Merci de votre visite. J'espère avoir de vos nouvelles !",
     "learn_more": "Vous pouvez en apprendre plus sur moi sur la page",
     "intro_page": "intro",
     "browse": ", ou parcourez les pages",
@@ -95,9 +102,9 @@
   "ideal_role": {
     "page_title": "Roberto Vallado | CV | Poste idéal",
     "h1": "Ce que je recherche",
-    "p0": "Je cherche un poste où je peux contribuer de manière significative — en écrivant du code solide et maintenable tout en appliquant une perspective orientée sécurité qui aide l'équipe à créer des logiciels plus résilients.",
+    "p0": "Je cherche un poste où je peux contribuer de manière significative : écrire du code solide et maintenable tout en appliquant une perspective orientée sécurité qui aide l'équipe à créer des logiciels plus résilients.",
     "p1": "J'apprécie les environnements où la qualité compte, où la collaboration est la norme, et où il y a de la place pour évoluer techniquement tout en ayant un impact positif sur les personnes qui m'entourent.",
-    "p2": "Mentorer les développeurs juniors et partager les connaissances sont des choses que j'apprécie vraiment — pas seulement des responsabilités assumées par obligation.",
+    "p2": "Mentorer les développeurs juniors et partager les connaissances sont des choses que j'apprécie vraiment, pas seulement des responsabilités assumées par obligation.",
     "values_title": "Valeurs",
     "values_sub": "Je recherche une équipe et une organisation qui partagent ces principes",
     "req_title": "Paramètres",
@@ -122,7 +129,7 @@
       { "lbl": "Type de contrat", "desc": "Permanent, temps plein" },
       { "lbl": "Niveau", "desc": "Développeur intermédiaire à senior, idéalement avec des opportunités de leadership technique" },
       { "lbl": "Domaine", "desc": "Développement full-stack, avec préférence pour les backends .NET / C# et les frontends modernes (Angular, TypeScript)" },
-      { "lbl": "Secteur", "desc": "Ouvert à divers secteurs — notamment les services publics, la civic tech, la fintech ou les produits axés sécurité" },
+      { "lbl": "Secteur", "desc": "Ouvert à divers secteurs, notamment les services publics, la civic tech, la fintech ou les produits axés sécurité" },
       { "lbl": "Rémunération", "desc": "Compétitive et proportionnelle à l'expérience ; flexible pour la bonne opportunité" }
     ]
   }

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../styles/resume-main.scss';
+	import { locale, t } from '$lib/i18n';
 
 	export let data: any;
 
@@ -11,6 +12,11 @@
 		const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 		return `${months[parseInt(month) - 1]} ${year}`;
 	}
+
+	$: isFr = $locale === 'fr';
+	$: personalStatement = isFr && data['personal-statement-fr']
+		? data['personal-statement-fr']
+		: data['personal-statement'];
 </script>
 
 <svelte:head>
@@ -31,11 +37,11 @@
 
 	<!-- Personal statement -->
   <section class="personal-statement">
-    <p>{data['personal-statement']}</p>
+    <p>{personalStatement}</p>
 		<a href="/intro">
 			<button class="small-btn">
 				<i class="nav-icon fa-solid fa-address-card"></i>
-				View Full Bio
+				{$t('home.view_bio')}
 				<i class="fa-solid fa-arrow-right"></i>
 			</button>
 		</a>
@@ -43,16 +49,16 @@
 
 	{#if data.work && data.work.length > 0}
 		<section class="work">
-			<h2>Experience</h2>
+			<h2>{$t('nav.experience')}</h2>
 			{#each data.work as job}
 				<div>
 					<h3>{job.name}</h3>
 					<h4>
-						{job.position}
+						{isFr && job['position-fr'] ? job['position-fr'] : job.position}
 						<span class="grey">{formatData(job.startDate)} - {formatData(job.endDate)}</span>
 					</h4>
 					<ul>
-						{#each job.highlights as highlight}
+						{#each (isFr && job['highlights-fr'] ? job['highlights-fr'] : job.highlights) as highlight}
 							<li>{highlight}</li>
 						{/each}
 					</ul>
@@ -61,7 +67,7 @@
 			<a href="/experience">
 				<button class="small-btn">
 					<i class="nav-icon fa-solid fa-briefcase"></i>
-					View All Experience
+					{$t('home.view_experience')}
 					<i class="fa-solid fa-arrow-right"></i>
 				</button>
 			</a>
@@ -70,7 +76,7 @@
 
 	{#if data.education && data.education.length > 0}
 	<section class="education">
-		<h2>Education</h2>
+		<h2>{$t('home.education')}</h2>
     {#each data.education as edu}
       <div>
         <h3>{edu.institution}</h3>
@@ -82,7 +88,7 @@
 	{/if}
 
   <section class="skills">
-    <h2>Skills</h2>
+    <h2>{$t('nav.skills')}</h2>
 		<ul>
 		{#each data.skills as skill}
 			<li>
@@ -93,18 +99,18 @@
 		<a href="/skills">
 			<button class="small-btn">
 				<i class="nav-icon fa-solid fa-code"></i>
-				View All Skills
+				{$t('home.view_skills')}
 				<i class="fa-solid fa-arrow-right"></i>
 			</button>
 		</a>
   </section>
 
   <section class="achievements">
-		<h2>Achievements</h2>
+		<h2>{$t('nav.achievements')}</h2>
 		<ul>
 			{#each (data.achievements || []) as achievement}
 				<li>
-					{ achievement.text }
+					{isFr && achievement['text-fr'] ? achievement['text-fr'] : achievement.text}
 					{#if achievement.source}
 						<a href={achievement.source} title={makeUrlretty(achievement.source)} target="_blank" rel="nofollow">
 							<i class="achievement-link fa-solid fa-link"></i>
@@ -116,18 +122,18 @@
 		<a href="/achievements">
 			<button class="small-btn">
 				<i class="nav-icon fa-solid fa-star"></i>
-				View All Achievements
+				{$t('home.view_achievements')}
 				<i class="fa-solid fa-arrow-right"></i>
 			</button>
 		</a>
 	</section>
 
 	<section class="achievements">
-		<h2>Awards</h2>
+		<h2>{$t('achievements.awards')}</h2>
 		<ul>
 			{#each (data.awards || []) as award}
 				<li>
-					<b>{ award.title }</b> - <i>{ award.summary}</i>
+					<b>{award.title}</b> - <i>{isFr && award['summary-fr'] ? award['summary-fr'] : award.summary}</i>
 					{#if award.source}
 						<a href={award.source} title={makeUrlretty(award.source)} target="_blank" rel="nofollow">
 							<i class="achievement-link fa-solid fa-link"></i>
@@ -136,7 +142,6 @@
 				</li>
 			{/each}
 		</ul>
-
   </section>
 </div>
 <style>
