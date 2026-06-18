@@ -14,7 +14,7 @@ personal-statement: |
   against a broken internet. That is why I actively hunt real-world vulnerabilities
   on Bugcrowd, built an SBOM pipeline to proactively catch vulnerable dependencies, and
   am currently working towards CompTIA Network+ to sharpen my understanding of the
-  infrastructure layer that underpins secure software. Most recently technical lead:
+  infrastructure layer that underpins secure software. Most recently team lead:
   drove architecture decisions, mentored four developers, and filled QA and DevOps gaps
   in a lean team with no dedicated specialists, gaining hands-on breadth across the
   full delivery stack. Former instructor, clear communicator, strong mentor. Fluent in
@@ -27,7 +27,7 @@ personal-statement-fr: |
   activement des vulnérabilités réelles sur Bugcrowd, j'ai mis en place un pipeline
   SBOM pour identifier proactivement les dépendances à risque, et je prépare
   actuellement la certification CompTIA Network+ pour renforcer ma compréhension de la
-  couche réseau qui sous-tend tout logiciel sécurisé. Plus récemment lead technique :
+  couche réseau qui sous-tend tout logiciel sécurisé. Plus récemment lead d'équipe :
   décisions d'architecture, mentorat de quatre développeurs, et prise en charge des
   rôles QA et DevOps dans une équipe légère sans spécialistes dédiés. Ancien
   instructeur, communicateur clair, mentor accompli. Maîtrise de l'anglais, du
@@ -85,28 +85,19 @@ work:
     relecteur de code plus rigoureux.
 
 - name: Freelance
-  position: Web Developer & SEO Consultant
-  position-fr: Développeur Web & Consultant SEO
+  position: Web Developer
+  position-fr: Développeur Web indépendant
   startDate: 2023-01
   endDate: Present
   highlights:
-  - Worked with 1 marketing clients across Mexico and Latin America, building
-    and optimizing their websites for performance and conversion.
-  - Handle SEO including on-page optimization, structured data, Core Web Vitals
-    and keyword strategy.
-  - Set up AI-powered automations like content pipelines, lead capture and
-    analytics dashboards to help clients do more.
-  - Help clients set up Google Analytics 4 and Search Console so they can see
-    what's actually working.
+  - Built and optimized websites for marketing clients in Mexico and Latin America,
+    focusing on performance and conversion.
+  - Set up AI-powered automations including content pipelines and analytics dashboards.
   highlights-fr:
-  - Accompagnement de 1 clients marketing au Mexique et en Amérique latine,
-    conception et optimisation de leurs sites pour la performance et la conversion.
-  - Gestion du SEO, incluant l'optimisation on-page, les données structurées, Core Web Vitals
-    et la stratégie de mots-clés.
-  - Mise en place d'automations alimentées par l'IA comme des pipelines de
-    contenu, la capture de leads et des tableaux de bord analytiques.
-  - Aide les clients à configurer Google Analytics 4 et Search Console pour
-    savoir ce qui fonctionne vraiment.
+  - Conception et optimisation de sites web pour des clients marketing au Mexique
+    et en Amérique latine, avec un focus sur la performance et la conversion.
+  - Mise en place d'automations IA incluant des pipelines de contenu et des tableaux
+    de bord analytiques.
 
 - name: SSM Innovation Centre
   position: Intermediate Software Developer
