@@ -9,16 +9,18 @@ export type Locale = typeof LOCALES[number];
 
 const messages: Record<Locale, Record<string, any>> = { en, fr };
 
+const LOCALE_KEY = 'locale_v2';
+
 function getStored(): Locale {
-  if (!browser) return 'en';
-  const s = localStorage.getItem('locale');
-  return (s === 'en' || s === 'fr') ? s : 'en';
+  if (!browser) return 'fr';
+  const s = localStorage.getItem(LOCALE_KEY);
+  return (s === 'en' || s === 'fr') ? s : 'fr';
 }
 
 export const locale = writable<Locale>(getStored());
 
 locale.subscribe(l => {
-  if (browser) localStorage.setItem('locale', l);
+  if (browser) localStorage.setItem(LOCALE_KEY, l);
 });
 
 export function setLocale(l: Locale) {
