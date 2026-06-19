@@ -114,6 +114,9 @@ work:
   - Built and owned an SBOM pipeline to continuously audit all third-party library
     dependencies, surfacing vulnerable packages before they reached production and
     reducing supply-chain risk across our projects.
+  - Designed and implemented custom ASP.NET Core middleware and built attribute-driven
+    audit tables to automatically capture and persist security-relevant user actions
+    across multiple services, improving traceability and supporting compliance requirements.
   - Filled QA and DevOps gaps in a lean team with no dedicated specialists, taking
     ownership of test strategy, CI/CD configuration and deployment pipelines alongside
     regular feature delivery, gaining hands-on breadth across the full stack.
@@ -128,6 +131,10 @@ work:
   - Mise en place et gestion d'un pipeline SBOM pour auditer en continu toutes les
     dépendances tierces, identifiant les paquets vulnérables avant leur mise en
     production et réduisant les risques liés à la chaîne d'approvisionnement.
+  - Conception et mise en place de middlewares ASP.NET Core personnalisés et de tables
+    d'audit pilotées par attributs pour capturer et persister automatiquement les actions
+    sensibles des utilisateurs à travers plusieurs services, améliorant la traçabilité
+    et répondant aux exigences de conformité.
   - Prise en charge des rôles QA et DevOps dans une équipe légère sans spécialistes
     dédiés, avec responsabilité de la stratégie de tests, de la configuration CI/CD
     et des déploiements en parallèle du développement de fonctionnalités.
