@@ -11,16 +11,16 @@
     "view_source": "Voir le code source sur GitHub"
   },
   "intro": {
-    "page_title": "Roberto Vallado | Développeur Full-Stack & Chercheur en Sécurité | Intro",
+    "page_title": "Roberto Vallado | Développeur Full-Stack .NET | Sécurité & Infrastructure",
     "h1": "Intro",
     "greeting": "Hola, je suis Roberto",
-    "tagline": "Développeur orienté sécurité qui veut rendre l'internet plus difficile à compromettre, un bug à la fois.",
-    "p0": "Je suis Roberto, développeur full-stack et passionné de sécurité basé à Québec. Mon objectif est simple : construire des logiciels meilleurs et plus sûrs, et contribuer à rendre l'internet moins vulnérable. Plus de cinq ans à construire des applications en production en C# / .NET et Angular m'ont appris le métier. Mais c'est la chasse active aux vulnérabilités réelles sur Bugcrowd qui a changé ma façon de voir chaque système que je touche. Ce que j'aime vraiment faire : trouver des failles, comprendre comment et pourquoi elles existent, rédiger des rapports clairs et reproductibles, et voir les équipes les corriger. Je pense aux surfaces d'attaque comme la plupart des développeurs pensent aux fonctionnalités.",
-    "p1": "À la frontière de l'IA, je construis activement avec l'IA agentique, en concevant et intégrant des flux de travail alimentés par des LLM qui automatisent les tâches répétitives, font émerger des informations utiles et aident les entreprises à aller plus vite sans épuiser leurs équipes. Je crois que le travail en IA le plus impactant se situe à l'intersection d'une ingénierie solide et de problèmes commerciaux concrets, et c'est exactement là où je veux être.",
-    "p2": "Je fais également du développement web et du conseil en référencement (SEO) en freelance pour des professionnels du marketing et des PME au Mexique et en Amérique latine. J'aide mes clients à créer des sites rapides et bien structurés, à se positionner sur Google grâce au SEO on-page, aux données structurées et à l'optimisation des Core Web Vitals, et à mettre en place des outils d'analyse qui leur montrent vraiment ce qui fonctionne. Être multilingue (anglais, français, portugais et espagnol) me permet de travailler directement avec des clients partout dans les Amériques.",
-    "p3": "Dans mon emploi principal chez SSM Innovation Centre, je suis passé de développeur en stage à chef d'équipe, en assumant des responsabilités de mentorat, de décisions architecturales et de planification de projets en plus du développement actif. J'ai également enseigné le développement d'applications web et d'affaires au Collège Sault, ce qui a affiné ma capacité à expliquer des sujets complexes clairement et à m'adapter au niveau de chaque interlocuteur.",
-    "p4": "Je termine actuellement un AEC en Développement d'applications sécuritaires au Cégep Limoilou, et je prépare la certification CompTIA Network+, non pas pour devenir ingénieur réseau, mais parce que comprendre la couche réseau et infrastructure me rend plus rigoureux en tant que développeur et chercheur en sécurité. Savoir comment les paquets circulent, comment DNS résout, comment le handshake TLS fonctionne : ce contexte comble l'écart entre écrire du code et comprendre ce qui peut mal tourner en dessous. L'objectif a toujours été le même : construire des choses difficiles à compromettre, et contribuer à réparer l'internet au passage.",
-    "p5": "Si vous construisez quelque chose de significatif (que ce soit un produit, une plateforme ou une stratégie de croissance), j'aimerais en faire partie. Je suis toujours ouvert à la bonne opportunité, à un mandat en freelance ou simplement à une bonne conversation sur la tech, l'IA ou le marketing numérique."
+    "tagline": "Développeur full-stack .NET qui construit des choses solides — et sait comment le démontrer.",
+    "p0": "Je suis Roberto, développeur full-stack basé à Québec avec cinq ans d'expérience en production en C# / .NET et Angular. Ma base, c'est livrer des logiciels qui fonctionnent : fonctionnalités, API, bases de données, pipelines de déploiement, la chaîne de livraison complète. Ce que j'apporte en plus, c'est une compréhension des couches que la plupart des développeurs délèguent à d'autres — la sécurité et l'infrastructure.",
+    "p1": "Je chasse activement des vulnérabilités réelles sur Bugcrowd. Pas parce que je veux me reconvertir en sécurité, mais parce que rien n'affine les instincts d'un développeur comme comprendre comment les systèmes se font compromettre. Ça change la façon dont on conçoit un endpoint API, dont on pense aux flux d'authentification, dont on lit une pull request. Chez SSM Innovation Centre, j'ai mis en place un pipeline SBOM pour détecter proactivement les dépendances vulnérables — la pensée sécurité intégrée directement dans le processus de livraison.",
+    "p2": "Du côté infrastructure, j'ai pris en charge des pipelines CI/CD, des déploiements Docker et des configurations Terraform dans une équipe légère sans spécialistes DevOps dédiés. Je prépare actuellement la certification CompTIA Network+ — non pas pour devenir ingénieur réseau, mais parce que comprendre comment les paquets circulent, comment DNS résout et comment le handshake TLS fonctionne comble l'écart entre écrire du code et comprendre ce qui peut mal tourner en dessous.",
+    "p3": "Chez SSM Innovation Centre, je suis passé de développeur en stage à lead technique : pilotage des décisions architecturales, encadrement de quatre développeurs, et prise en charge de QA et DevOps en parallèle du développement. J'ai également enseigné le développement d'applications web et d'affaires au Collège Sault, ce qui m'a appris à expliquer des décisions techniques complexes clairement et à accompagner les développeurs juniors.",
+    "p4": "J'ai récemment complété un AEC en Développement d'applications sécuritaires au Cégep Limoilou, ajoutant des bases formelles en cybersécurité à ma recherche active en bug bounty et à mon travail de développement quotidien. La combinaison est délibérée : je veux être le type de développeur qui rend une équipe plus résiliente simplement en en faisant partie.",
+    "p5": "Si vous cherchez un développeur .NET qui apporte une sensibilité à la sécurité et une profondeur en infrastructure au quotidien — pas comme centres d'intérêt secondaires — j'aimerais qu'on se parle. Je cherche un poste où la qualité et la sécurité sont intégrées dès le départ, pas ajoutées après coup."
   },
   "experience": {
     "page_title": "Roberto Vallado | CV | Expérience",
@@ -45,7 +45,7 @@
     ]
   },
   "achievements": {
-    "page_title": "Roberto Vallado | Réalisations | Développeur · Sécurité · SEO · IA",
+    "page_title": "Roberto Vallado | Réalisations | Développeur .NET · Sécurité · Infrastructure",
     "h2": "Réalisations",
     "highlights": "Points forts",
     "awards": "Prix et distinctions",
@@ -55,13 +55,12 @@
     "contact": "me contacter",
     "stats": [
       { "stat": "Chercheur en sécurité actif sur Bugcrowd : identification et divulgation responsable de vulnérabilités réelles dans des API REST et des applications web", "source": "https://bugcrowd.com" },
-      { "stat": "Lead technique chez SSM Innovation Centre : pilotage des décisions architecturales, de la qualité du code et de la croissance des développeurs dans des projets C# / .NET", "source": "" },
-      { "stat": "Développeur web et consultant SEO freelance pour des clients au Mexique, avec des améliorations mesurables en visibilité organique et présence numérique", "source": "" },
-      { "stat": "Construction avec l'IA agentique : conception de flux de travail automatisés alimentés par des LLM pour réduire la charge manuelle des équipes marketing", "source": "" },
-      { "stat": "Ancien instructeur au Collège Sault : conception et livraison de curriculum en développement d'applications web et d'affaires", "source": "" },
+      { "stat": "Lead technique chez SSM Innovation Centre : pilotage des décisions architecturales, pipelines CI/CD, qualité du code et croissance des développeurs dans des projets C# / .NET", "source": "" },
+      { "stat": "Mis en place un pipeline SBOM chez SSM Innovation Centre pour auditer en continu les dépendances tierces et identifier les paquets vulnérables avant la mise en production", "source": "" },
+      { "stat": "Ancien instructeur au Collège Sault : conception et livraison de curriculum en développement d'applications web et d'affaires auprès de cohortes de 30 à 35 étudiants", "source": "" },
       { "stat": "Diplômé avec une moyenne de 3,8 du programme en programmation informatique du Collège Sault, avec deux prix d'excellence académique", "source": "" },
-      { "stat": "Maîtrise de quatre langues (anglais, français, portugais et espagnol), pour une collaboration fluide en Amérique du Nord et en Amérique latine", "source": "" },
-      { "stat": "AEC en Développement d'applications sécuritaires au Cégep Limoilou (2026)", "source": "" }
+      { "stat": "Maîtrise de quatre langues (anglais, français, portugais et espagnol), pour une collaboration fluide au Canada, aux États-Unis et en Amérique latine", "source": "" },
+      { "stat": "AEC en Développement d'applications sécuritaires complétée au Cégep Limoilou (avril 2026), en parallèle de recherches actives en bug bounty", "source": "" }
     ],
     "awards_list": [
       { "award": "Prix ADnet à la mémoire de Wilfred Lefresne (2022)", "issuer": "Collège Sault" },
@@ -79,7 +78,7 @@
   "contact": {
     "page_title": "Roberto Vallado | CV | Contact",
     "h1": "Contact",
-    "intro": "Si vous cherchez un développeur qui allie de solides compétences en ingénierie et une approche sécurité-first, je serais ravi d'avoir de vos nouvelles !",
+    "intro": "Si vous cherchez un développeur .NET qui apporte une sensibilité à la sécurité et une profondeur en infrastructure, je serais ravi d'avoir de vos nouvelles.",
     "email_label": "La meilleure façon de me joindre est par courriel :",
     "reveal": "Afficher l'adresse courriel",
     "thanks": "Merci de votre visite. J'espère avoir de vos nouvelles !",
@@ -110,7 +109,7 @@
     "req_title": "Paramètres",
     "req_sub": "Je suis flexible, mais idéalement dans ces paramètres",
     "why_title": "Pourquoi moi ?",
-    "why_text": "J'apporte une combinaison d'expérience solide en développement, d'une sensibilité à la sécurité issue de mes recherches en bug bounty, et d'une expérience de leadership en tant que chef d'équipe chez SSM Innovation Centre. En apprendre plus sur la page",
+    "why_text": "J'apporte cinq ans d'expérience en production .NET et Angular, une profondeur en sécurité et en infrastructure que la plupart des développeurs n'ont pas, et une expérience de leadership en tant que lead technique chez SSM Innovation Centre. En apprendre plus sur la page",
     "why_intro": "intro",
     "why_mid": ", voir les preuves dans mes",
     "why_achievements": "réalisations",

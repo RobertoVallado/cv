@@ -40,6 +40,8 @@ def compile_latex(input_tex: str, output_pdf: str, timeout: int = 300) -> None:
                 os.makedirs(output_dir)
             # Move the generated PDF to the desired output path
             compiled_pdf_path = os.path.join(input_dir, base_name)
+            if os.path.exists(output_pdf):
+                os.remove(output_pdf)
             os.rename(compiled_pdf_path, output_pdf)
             print(f"{Fore.GREEN}✅ Success: PDF generated at {output_pdf}")
         else:

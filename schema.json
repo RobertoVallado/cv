@@ -277,9 +277,10 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "title":   { "type": "string" },
-          "summary": { "type": "string" },
-          "source":  { "type": "string", "format": "uri" }
+          "title":      { "type": "string" },
+          "summary":    { "type": "string" },
+          "summary-fr": { "type": "string" },
+          "source":     { "type": "string" }
         },
         "required": ["title","summary"]
       }
@@ -295,13 +296,16 @@
             "type": "string",
             "description": "Description of the achievement"
           },
+          "text-fr": {
+            "type": "string",
+            "description": "French translation of the achievement"
+          },
           "source": {
             "type": "string",
-            "description": "URL providing more details about the achievement",
-            "format": "uri"
+            "description": "URL providing more details about the achievement"
           }
         },
-        "required": ["text", "source"]
+        "required": ["text"]
       }
     },
     "projects": {

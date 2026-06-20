@@ -11,16 +11,16 @@
     "view_source": "View CV source on GitHub"
   },
   "intro": {
-    "page_title": "Roberto Vallado | Full-Stack Developer & Security Researcher | Intro",
+    "page_title": "Roberto Vallado | Full-Stack .NET Developer | Security & Infrastructure",
     "h1": "Intro",
     "greeting": "Hola, I'm Roberto",
-    "tagline": "Security-focused developer who wants to make the internet a harder place to break, one bug at a time.",
-    "p0": "I'm Roberto, a full-stack developer and security enthusiast based in Québec. My goal is simple: build better, safer software and help make the internet a less broken place. Over five years of building production applications in C# / .NET and Angular gave me the craft of shipping reliable code. But it was actively hunting real-world security vulnerabilities on Bugcrowd that changed how I see every system I touch. I genuinely love finding bugs: figuring out how and why they exist, writing clear reproducible reports, and watching teams fix them. I think about attack surfaces the way most developers think about features.",
-    "p1": "On the AI frontier, I'm actively building with agentic AI, designing and integrating LLM-powered workflows that automate repetitive tasks, surface insights, and help businesses move faster without burning out their teams. I believe the most impactful AI work right now happens at the intersection of solid engineering and practical business problems, and that's exactly where I want to be.",
-    "p2": "I also do freelance web development and SEO consulting for marketing professionals and small businesses in Mexico and Latin America. I help clients build fast, well-structured websites, get found on Google through on-page SEO, structured data and Core Web Vitals optimization, and set up analytics that actually tell them what's working. Being multilingual (English, French, Portuguese and Spanish) means I can work directly with clients across the Americas without losing anything in translation.",
-    "p3": "In my day job at SSM Innovation Centre, I've grown from a co-op developer into a team lead, taking on mentorship, architectural decisions, and project planning responsibilities alongside the hands-on coding. I've also taught Web Applications and Business Applications Development at Sault College, which sharpened my ability to explain complex things clearly and meet people where they are.",
-    "p4": "I'm currently completing an AEC in Secure Application Development at Cégep Limoilou, and working towards CompTIA Network+, not to become a network engineer, but because understanding the networking and infrastructure layer makes me a sharper developer and a better security researcher. Knowing how packets move, how DNS resolves, how TLS handshakes work: that context closes the gap between writing code and understanding what can go wrong underneath it. The goal has always been the same: build things that are hard to break, and help fix the internet along the way.",
-    "p5": "If you're building something meaningful (whether that's a product, a platform, or a growth strategy), I'd love to be part of it. I'm always open to the right opportunity, freelance engagement, or just a good conversation about tech, AI, or digital marketing."
+    "tagline": "Full-stack .NET developer who builds things that are hard to break — and knows how to prove it.",
+    "p0": "I'm Roberto, a full-stack developer based in Québec with five years of production experience in C# / .NET and Angular. My foundation is shipping software that works: features, APIs, databases, deployment pipelines, the full delivery chain. What I bring on top of that is an understanding of the layers most developers treat as someone else's problem — security and infrastructure.",
+    "p1": "I actively hunt real-world vulnerabilities on Bugcrowd. Not because I want to pivot into security, but because nothing sharpens your instincts as a developer like understanding how systems get broken. It changes how you design an API endpoint, how you think about authentication flows, how you read a pull request. At SSM Innovation Centre I built an SBOM pipeline to proactively catch vulnerable dependencies — security thinking applied directly into the delivery process.",
+    "p2": "On the infrastructure side, I've owned CI/CD pipelines, Docker deployments, and Terraform configurations in a lean team with no dedicated DevOps specialists. I'm currently working towards CompTIA Network+ — not to become a network engineer, but because understanding how packets move, how DNS resolves, and how TLS handshakes work closes the gap between writing code and understanding what can go wrong underneath it.",
+    "p3": "At SSM Innovation Centre I grew from a co-op developer to team lead: driving architecture decisions, mentoring four developers, and taking ownership of QA and DevOps responsibilities alongside regular feature delivery. I've also taught Web Applications and Business Applications Development at Sault College, which means I know how to explain complex technical decisions clearly and bring junior developers along.",
+    "p4": "I recently completed an AEC in Secure Application Development at Cégep Limoilou, adding formal cybersecurity foundations on top of my hands-on bug bounty research and daily development work. The combination is deliberate: I want to be the kind of developer who makes a team more resilient just by being on it.",
+    "p5": "If you're looking for a .NET developer who brings security awareness and infrastructure depth as a day-to-day reality — not as side interests — I'd like to talk. I'm looking for a role where quality and security are built in, not bolted on."
   },
   "experience": {
     "page_title": "Roberto Vallado | CV | Experience",
@@ -45,7 +45,7 @@
     ]
   },
   "achievements": {
-    "page_title": "Roberto Vallado | Achievements | Developer · Security · SEO · AI",
+    "page_title": "Roberto Vallado | Achievements | .NET Developer · Security · Infrastructure",
     "h2": "Achievements",
     "highlights": "Highlights",
     "awards": "Awards",
@@ -55,13 +55,12 @@
     "contact": "get in touch",
     "stats": [
       { "stat": "Active bug bounty researcher on Bugcrowd: identified and responsibly disclosed real-world vulnerabilities in REST APIs and web applications", "source": "https://bugcrowd.com" },
-      { "stat": "Technical lead at SSM Innovation Centre: driving architectural decisions, code quality and developer growth across C# / .NET projects", "source": "" },
-      { "stat": "Freelance web developer & SEO consultant for marketing clients in Mexico, delivering measurable growth in organic search visibility and digital presence", "source": "" },
-      { "stat": "Building with agentic AI: designing LLM-powered automation workflows that reduce manual overhead for businesses and marketing teams", "source": "" },
-      { "stat": "Former instructor at Sault College: designed and delivered Web Applications and Business Applications Development curriculum", "source": "" },
+      { "stat": "Technical lead at SSM Innovation Centre: driving architectural decisions, CI/CD pipelines, code quality and developer growth across C# / .NET projects", "source": "" },
+      { "stat": "Built an SBOM pipeline at SSM Innovation Centre to continuously audit third-party dependencies and surface vulnerable packages before they reached production", "source": "" },
+      { "stat": "Former instructor at Sault College: designed and delivered Web Applications and Business Applications Development curriculum to cohorts of 30–35 students", "source": "" },
       { "stat": "Computer Programming diploma graduate, 3.8 GPA, with two academic excellence awards from Sault College", "source": "" },
-      { "stat": "Fluent in four languages (English, French, Portuguese and Spanish), enabling seamless collaboration across North American and Latin American markets", "source": "" },
-      { "stat": "Currently completing an AEC in Secure Application Development at Cégep Limoilou (2026)", "source": "" }
+      { "stat": "Fluent in four languages (English, French, Portuguese and Spanish), enabling seamless collaboration across Canada, the US and Latin America", "source": "" },
+      { "stat": "Completed an AEC in Secure Application Development at Cégep Limoilou (April 2026), building formal cybersecurity foundations alongside active bug bounty research", "source": "" }
     ],
     "awards_list": [
       { "award": "ADnet Award in Memory of Wilfred Lefresne (2022)", "issuer": "Sault College" },
@@ -79,7 +78,7 @@
   "contact": {
     "page_title": "Roberto Vallado | CV | Contact",
     "h1": "Contact",
-    "intro": "If you're looking for a developer who brings both strong engineering skills and a security-first mindset, I'd love to hear from you!",
+    "intro": "If you're looking for a .NET developer who brings security awareness and infrastructure depth to the table, I'd love to hear from you.",
     "email_label": "The best way to reach me is by email:",
     "reveal": "Reveal email address",
     "thanks": "Thank you for stopping by. I hope to hear from you!",
@@ -110,7 +109,7 @@
     "req_title": "Parameters",
     "req_sub": "I'm flexible, but ideally working within these parameters",
     "why_title": "Why me?",
-    "why_text": "I bring a combination of solid development experience, security awareness from my bug bounty work, and leadership experience from acting as team lead at SSM Innovation Centre. You can learn more on the",
+    "why_text": "I bring five years of production .NET and Angular experience, security and infrastructure depth that most developers don't have, and leadership experience from acting as team lead at SSM Innovation Centre. You can learn more on the",
     "why_intro": "intro",
     "why_mid": "page, see the evidence in my",
     "why_achievements": "achievements",
