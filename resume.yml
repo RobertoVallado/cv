@@ -10,7 +10,7 @@ basics:
 
 personal-statement: |
   Full-stack .NET developer with five years of production experience in C# / .NET and
-  Angular. The foundation is shipping software that works — features, APIs, databases,
+  Angular. The foundation is shipping software that works: features, APIs, databases,
   deployment pipelines, the full delivery chain. What I bring on top is the layer most
   developers treat as someone else's problem: a genuine understanding of how software
   breaks and how to build it so it doesn't. I hunt real vulnerabilities on Bugcrowd,
@@ -23,7 +23,7 @@ personal-statement: |
 
 personal-statement-fr: |
   Développeur full-stack .NET avec cinq ans d'expérience en production en C# / .NET
-  et Angular. La base, c'est livrer des logiciels qui fonctionnent — fonctionnalités,
+  et Angular. La base, c'est livrer des logiciels qui fonctionnent : fonctionnalités,
   API, bases de données, pipelines de déploiement, la chaîne complète. Ce que j'apporte
   en plus, c'est la couche que la plupart des développeurs délèguent à d'autres : une
   compréhension réelle de la façon dont les logiciels se font compromettre et comment
@@ -101,6 +101,9 @@ work:
   - Designed and implemented custom ASP.NET Core middleware and built attribute-driven
     audit tables to automatically capture and persist security-relevant user actions
     across multiple services, improving traceability and supporting compliance requirements.
+  - Wrote and optimized complex MSSQL stored procedures and views to encapsulate
+    business logic and support reporting requirements, reducing ad-hoc query complexity
+    in the application layer and improving data access performance across services.
   - Filled QA and DevOps gaps in a lean team with no dedicated specialists, taking
     ownership of test strategy, CI/CD configuration and deployment pipelines alongside
     regular feature delivery, gaining hands-on breadth across the full stack.
@@ -119,6 +122,10 @@ work:
     d'audit pilotées par attributs pour capturer et persister automatiquement les actions
     sensibles des utilisateurs à travers plusieurs services, améliorant la traçabilité
     et répondant aux exigences de conformité.
+  - Rédaction et optimisation de procédures stockées et vues MSSQL complexes pour
+    encapsuler la logique métier et répondre aux besoins de reporting, réduisant la
+    complexité des requêtes ad hoc dans la couche applicative et améliorant les
+    performances d'accès aux données entre les services.
   - Prise en charge des rôles QA et DevOps dans une équipe légère sans spécialistes
     dédiés, avec responsabilité de la stratégie de tests, de la configuration CI/CD
     et des déploiements en parallèle du développement de fonctionnalités.
@@ -130,14 +137,14 @@ work:
   endDate: 2024-06
   highlights:
   - Designed and taught Web Applications and Business Applications Development
-    courses to cohorts of 30 to 35 students.
+    courses to cohorts of 30–35 students.
   - Kept strong completion rates by adapting to different learning styles
     and backgrounds.
   - Regularly updated course content to keep it current with industry tools
     and practices.
   highlights-fr:
   - Conception et enseignement des cours de développement d'applications web
-    et d'affaires à des cohortes de 30 à 35 étudiants.
+    et d'affaires à des cohortes de 30–35 étudiants.
   - Maintien de bons taux de complétion en adaptant l'enseignement aux
     différents styles d'apprentissage.
   - Mise à jour régulière du contenu des cours pour rester en phase avec les
@@ -151,11 +158,16 @@ work:
   highlights:
   - Ramped up on a complex C# / .NET codebase and was contributing
     features and fixes within the first few weeks.
+  - Diagnosed and extended complex MSSQL stored procedures and views, tracing
+    data issues across multiple tables and service layers.
   - Solved complex technical problems independently, drawing on solid knowledge
     of algorithms, data structures and debugging.
   highlights-fr:
   - Prise en main rapide d'une base de code C# / .NET complexe, avec des
     contributions aux fonctionnalités et corrections dès les premières semaines.
+  - Diagnostic et extension de procédures stockées et vues MSSQL complexes,
+    avec traçage des problèmes de données à travers plusieurs tables et couches
+    de services.
   - Résolution autonome de problèmes techniques complexes grâce à une bonne
     maîtrise des algorithmes, structures de données et débogage.
 
@@ -211,6 +223,7 @@ skills:
 - name: Databases
   keywords:
   - MSSQL
+  - Stored Procedures & Views
   - PostgreSQL
   - MySQL
   - Entity Framework
