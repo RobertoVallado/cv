@@ -17,8 +17,7 @@ personal-statement: |
   infrastructure layer that underpins secure software. Most recently team lead:
   drove architecture decisions, mentored four developers, and filled QA and DevOps gaps
   in a lean team with no dedicated specialists, gaining hands-on breadth across the
-  full delivery stack. Former instructor, clear communicator, strong mentor. Fluent in
-  English, French, Portuguese and Spanish.
+  full delivery stack. Former instructor. Fluent in English, French, Portuguese and Spanish.
 
 personal-statement-fr: |
   Développeur full-stack orienté sécurité, avec plus de cinq ans d'expérience en
@@ -30,8 +29,7 @@ personal-statement-fr: |
   couche réseau qui sous-tend tout logiciel sécurisé. Plus récemment lead d'équipe :
   décisions d'architecture, mentorat de quatre développeurs, et prise en charge des
   rôles QA et DevOps dans une équipe légère sans spécialistes dédiés. Ancien
-  instructeur, communicateur clair, mentor accompli. Maîtrise de l'anglais, du
-  français, du portugais et de l'espagnol.
+  instructeur. Maîtrise de l'anglais, du français, du portugais et de l'espagnol.
 
 extra-links:
   work_history:
@@ -74,30 +72,12 @@ work:
     manual testing and custom tooling.
   - Found and reported several real-world security vulnerabilities with clear,
     reproducible write-ups that helped teams fix them quickly.
-  - Thinking about security every day has made me a sharper developer and
-    code reviewer.
   highlights-fr:
   - Recherche de vulnérabilités dans les applications web et les API REST via
     les méthodes OWASP, les tests manuels et des outils personnalisés.
   - Trouvé et rapporté plusieurs vulnérabilités réelles avec des write-ups
     clairs et reproductibles pour aider les équipes à les corriger rapidement.
-  - Penser à la sécurité au quotidien a fait de moi un développeur et un
-    relecteur de code plus rigoureux.
 
-- name: Freelance
-  position: Web Developer
-  position-fr: Développeur Web indépendant
-  startDate: 2023-01
-  endDate: Present
-  highlights:
-  - Built and optimized websites for marketing clients in Mexico and Latin America,
-    focusing on performance and conversion.
-  - Set up AI-powered automations including content pipelines and analytics dashboards.
-  highlights-fr:
-  - Conception et optimisation de sites web pour des clients marketing au Mexique
-    et en Amérique latine, avec un focus sur la performance et la conversion.
-  - Mise en place d'automations IA incluant des pipelines de contenu et des tableaux
-    de bord analytiques.
 
 - name: SSM Innovation Centre
   position: Intermediate Software Developer
@@ -165,7 +145,7 @@ work:
   startDate: 2022-01
   endDate: 2023-06
   highlights:
-  - Got up to speed quickly on a complex C# / .NET codebase and was contributing
+  - Ramped up on a complex C# / .NET codebase and was contributing
     features and fixes within the first few weeks.
   - Solved complex technical problems independently, drawing on solid knowledge
     of algorithms, data structures and debugging.
@@ -204,13 +184,10 @@ work:
   - Built production-ready features in C# and Angular from early on
     in the placement.
   - Jumped into code reviews and QA processes from day one.
-  - Wrote clean, maintainable code that rarely needed changes after review.
   highlights-fr:
   - Développement de fonctionnalités prêtes pour la production en C# et
     Angular dès le début du stage.
   - Participation aux revues de code et aux processus d'AQ dès le premier jour.
-  - Code propre et maintenable qui nécessitait rarement des modifications
-    après les revues.
 
 skills:
 - name: Backend
@@ -218,6 +195,7 @@ skills:
   - C#
   - .NET
   - Python
+  - Python Automation
   - REST APIs
   - Node.js
 - name: Frontend
@@ -226,16 +204,6 @@ skills:
   - React
   - Next.js
   - TypeScript
-- name: AI & Automation
-  keywords:
-  - Agentic AI
-  - LLM Integration
-  - Python Automation
-  - GitHub Actions
-- name: Marketing & SEO
-  keywords:
-  - SEO
-  - Google Analytics
 - name: Databases
   keywords:
   - MSSQL
@@ -246,6 +214,7 @@ skills:
   keywords:
   - Docker
   - Terraform
+  - GitHub Actions
   - Git
   - Linux
   - Azure
