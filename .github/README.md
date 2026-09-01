@@ -1,6 +1,7 @@
 <h1 align="center">Roberto Vallado - CV</h1>
 <p align="center">
-<a href="https://github.com/RobertoVallado/cv"><img src="https://i.ibb.co/G4vGDwtD/cv-logo.png?" width="48" /><br /></a>
+<a href="https://github.com/RobertoVallado/cv"><img src="https://i.ibb.co/G4vGDwtD/cv-logo.png?" width="48" 
+  style="filter: invert(34%) sepia(98%) saturate(1500%) hue-rotate(195deg) brightness(90%) contrast(95%);"/><br /></a>
 <i>This repo contains the source for my personal CV</i>
 <br />
 <i>A website (Svelte) and PDF (LaTeX) auto-built from jsonresume data</i>
@@ -145,16 +146,6 @@ The source for the website version is located in [`web/`](/web)
 
 ---
 
-## Screenshot
-
-<h3 align="center">Web 🌐</h3>
-<p align="center"><img width="650" src="https://i.ibb.co/7NjgmHC/alicia-sykes-cv-mockup.png" /></p>
-
-<h3 align="center">PDF 📄</h3>
-<p align="center"><a href="https://cv.aliciasykes.com"><img width="650" src="https://i.ibb.co/ycsHkjdF/screenshot-pdf.png?" /></a></p>
-
----
-
 ## Status
 
 | Workflow     | Description      | Status                     |
@@ -175,19 +166,6 @@ No point contributing. Just fork the repo and do whatever changes you like there
 
 ### Issues
 No point in raising issues here. It works on my machine. Therefore I see no issue, lol
-
----
-  
-
-## Attributions
-
-### Contributors
-
-![Contributors](https://readme-contribs.as93.net/contributors/lissy93/cv)
-
-### Sponsors
-
-![Sponsors](https://readme-contribs.as93.net/sponsors/lissy93)
 
 ---
 
@@ -231,7 +209,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <sup>Thanks for visiting :)</sup>
 </p>
 
-<!-- Dinosaur -->
+<!-- smiling* Dinosaur -->
 <!-- 
                         . - ~ ~ ~ - .
       ..     _      .-~               ~-.
@@ -239,7 +217,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     || |      }  }              /       \  \
 (\   \\ \~^..'                 |         }  \
  \`.-~  o      /       }       |        /    \
- (__          |       /        |       /      `.
+ (__)         |       /        |       /      `.
   `- - ~ ~ -._|      /_ - ~ ~ ^|      /- _      `.
               |     /          |     /     ~-.     ~- _
               |_____|          |_____|         ~ - . _ _~_-_
