@@ -15,7 +15,7 @@ personal-statement: |
   developers treat as someone else's problem: a genuine understanding of how software
   breaks and how to build it so it doesn't. I hunt real vulnerabilities on Bugcrowd,
   built an SBOM pipeline to catch vulnerable dependencies before they reach production,
-  and am working towards CompTIA Network+ to close the gap between writing code and
+  and am working towards a CCNA to close the gap between writing code and
   understanding what can go wrong underneath it. Most recently team lead: drove
   architecture decisions, mentored four developers, and owned QA and DevOps in a lean
   team with no dedicated specialists. Former instructor. Fluent in English, French,
@@ -29,7 +29,7 @@ personal-statement-fr: |
   compréhension réelle de la façon dont les logiciels se font compromettre et comment
   les construire pour résister. Je chasse des vulnérabilités réelles sur Bugcrowd, j'ai
   mis en place un pipeline SBOM pour détecter les dépendances vulnérables avant la mise
-  en production, et je prépare le CompTIA Network+ pour combler l'écart entre écrire du
+  en production, et je prépare le CCNA pour combler l'écart entre écrire du
   code et comprendre ce qui peut mal tourner en dessous. Lead technique récemment :
   décisions d'architecture, mentorat de quatre développeurs, prise en charge de QA et
   DevOps dans une équipe légère sans spécialistes dédiés. Ancien instructeur. Maîtrise
@@ -44,8 +44,8 @@ extra-links:
     link: https://github.com/RobertoVallado
 
 education:
-- institution: CompTIA
-  area: Network+
+- institution: Cisco
+  area: CCNA
   studyType: Certification
   startDate: ''
   endDate: ''
@@ -243,7 +243,7 @@ skills:
   - OWASP
   - Burp Suite
   - SBOM
-  - Network+ (in progress)
+  - CCNA (in progress)
 
 achievements:
   - text: Designed and implemented an SBOM pipeline at SSM Innovation Centre to
